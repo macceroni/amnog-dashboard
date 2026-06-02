@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import type { FlatRow } from "@/types/amnog";
 
 type SortKey = keyof FlatRow;
@@ -19,11 +19,9 @@ function formatDate(iso: string | null): string {
 }
 
 function compareValues(a: string | null, b: string | null, dir: SortDir, isDate = false): number {
-  // Nulls always last
   if (a === null && b === null) return 0;
   if (a === null) return 1;
   if (b === null) return -1;
-
   let result: number;
   if (isDate) {
     result = new Date(a).getTime() - new Date(b).getTime();
@@ -42,20 +40,117 @@ const COLUMNS: { key: SortKey; label: string; isDate?: boolean }[] = [
   { key: "datum_beschluss", label: "Beschlussdatum", isDate: true },
 ];
 
+function MultiSelectFilter({
+  label,
+  options,
+  selected,
+  onChange,
+}: {
+  label: string;
+  options: string[];
+  selected: Set<string>;
+  onChange: (next: Set<string>) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  function toggle(value: string) {
+    const next = new Set(selected);
+    if (next.has(value)) {
+      next.delete(value);
+    } else {
+      next.add(value);
+    }
+    onChange(next);
+  }
+
+  const buttonLabel =
+    selected.size === 0
+      ? label
+      : selected.size === 1
+      ? [...selected][0]
+      : `${label} (${selected.size})`;
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className={`flex items-center gap-1 border rounded-lg px-3 py-2 text-sm whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-zinc-300 ${
+          selected.size > 0
+            ? "border-zinc-400 bg-zinc-100 text-zinc-900 font-medium"
+            : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
+        }`}
+      >
+        {buttonLabel}
+        <span className="text-zinc-400 ml-1">{open ? "▲" : "▼"}</span>
+      </button>
+
+      {open && (
+        <div className="absolute z-10 mt-1 bg-white border border-zinc-200 rounded-lg shadow-md min-w-[200px] max-h-72 overflow-y-auto">
+          {options.map((opt) => (
+            <label
+              key={opt}
+              className="flex items-center gap-2 px-3 py-2 text-sm cursor-pointer hover:bg-zinc-50"
+            >
+              <input
+                type="checkbox"
+                checked={selected.has(opt)}
+                onChange={() => toggle(opt)}
+                className="accent-zinc-700"
+              />
+              <span className="text-zinc-700">{opt}</span>
+            </label>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function AmnogTable({ rows }: { rows: FlatRow[] }) {
   const [search, setSearch] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("datum_beschluss");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
+  const [selectedGebiete, setSelectedGebiete] = useState<Set<string>>(new Set());
+  const [selectedAusmass, setSelectedAusmass] = useState<Set<string>>(new Set());
+
+  const therapiegebiete = useMemo(() => {
+    const vals = new Set<string>();
+    for (const r of rows) if (r.therapiegebiet) vals.add(r.therapiegebiet);
+    return [...vals].sort((a, b) => a.localeCompare(b, "de"));
+  }, [rows]);
+
+  const ausmassStufen = useMemo(() => {
+    const vals = new Set<string>();
+    for (const r of rows) if (r.zn_ausmass) vals.add(r.zn_ausmass);
+    return [...vals].sort((a, b) => a.localeCompare(b, "de"));
+  }, [rows]);
 
   const filtered = useMemo(() => {
     const term = search.trim().toLowerCase();
-    if (!term) return rows;
-    return rows.filter(
-      (r) =>
-        r.handelsname?.toLowerCase().includes(term) ||
-        r.wirkstoff_inn?.toLowerCase().includes(term)
-    );
-  }, [rows, search]);
+    return rows.filter((r) => {
+      if (term && !r.handelsname?.toLowerCase().includes(term) && !r.wirkstoff_inn?.toLowerCase().includes(term)) {
+        return false;
+      }
+      if (selectedGebiete.size > 0 && !selectedGebiete.has(r.therapiegebiet ?? "")) {
+        return false;
+      }
+      if (selectedAusmass.size > 0 && !selectedAusmass.has(r.zn_ausmass ?? "")) {
+        return false;
+      }
+      return true;
+    });
+  }, [rows, search, selectedGebiete, selectedAusmass]);
 
   const sorted = useMemo(() => {
     const col = COLUMNS.find((c) => c.key === sortKey);
@@ -63,6 +158,14 @@ export default function AmnogTable({ rows }: { rows: FlatRow[] }) {
       compareValues(a[sortKey], b[sortKey], sortDir, col?.isDate)
     );
   }, [filtered, sortKey, sortDir]);
+
+  const hasActiveFilters = search.trim() !== "" || selectedGebiete.size > 0 || selectedAusmass.size > 0;
+
+  function resetAll() {
+    setSearch("");
+    setSelectedGebiete(new Set());
+    setSelectedAusmass(new Set());
+  }
 
   function handleSort(key: SortKey) {
     if (key === sortKey) {
@@ -80,7 +183,7 @@ export default function AmnogTable({ rows }: { rows: FlatRow[] }) {
 
   return (
     <div>
-      <div className="flex items-center gap-4 mb-4">
+      <div className="flex flex-wrap items-center gap-3 mb-4">
         <input
           type="search"
           placeholder="Handelsname oder Wirkstoff suchen…"
@@ -88,7 +191,27 @@ export default function AmnogTable({ rows }: { rows: FlatRow[] }) {
           onChange={(e) => setSearch(e.target.value)}
           className="border border-zinc-200 rounded-lg px-3 py-2 text-sm w-72 focus:outline-none focus:ring-2 focus:ring-zinc-300"
         />
-        <span className="text-sm text-zinc-500">
+        <MultiSelectFilter
+          label="Therapiegebiet"
+          options={therapiegebiete}
+          selected={selectedGebiete}
+          onChange={setSelectedGebiete}
+        />
+        <MultiSelectFilter
+          label="Ausmaß"
+          options={ausmassStufen}
+          selected={selectedAusmass}
+          onChange={setSelectedAusmass}
+        />
+        {hasActiveFilters && (
+          <button
+            onClick={resetAll}
+            className="text-sm text-zinc-500 hover:text-zinc-800 underline"
+          >
+            Filter zurücksetzen
+          </button>
+        )}
+        <span className="text-sm text-zinc-500 ml-auto">
           {sorted.length.toLocaleString("de-DE")} von {rows.length.toLocaleString("de-DE")} Patientengruppen
         </span>
       </div>
