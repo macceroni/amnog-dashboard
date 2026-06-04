@@ -16,9 +16,9 @@ export interface Patientengruppe {
   datum_befristung_bis: string | null;
   patientengruppe: string | null;
   awg_kurz: string | null;
-  icd_codes: IcdCode[];
-  atc_codes: string[];
-  pzn: string[];
+  icd_codes: IcdCode[] | null;
+  atc_codes: string[] | null;
+  pzn: string[] | null;
   zvt_best: string | null;
   zn_ausmass: string | null;
   zn_wahrscheinlichkeit: string | null;
@@ -68,9 +68,9 @@ export interface FlatRow {
   datum_befristung_bis: string | null;
   patientengruppe: string | null;
   awg_kurz: string | null;
-  icd_codes: IcdCode[];
-  atc_codes: string[];
-  pzn: string[];
+  icd_codes: IcdCode[] | null;
+  atc_codes: string[] | null;
+  pzn: string[] | null;
   zvt_best: string | null;
   zn_ausmass: string | null;
   zn_wahrscheinlichkeit: string | null;

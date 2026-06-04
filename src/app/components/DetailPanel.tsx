@@ -158,9 +158,9 @@ export default function DetailPanel({
             <dl className="space-y-1.5">
               <dt className="text-zinc-500">ICD-10</dt>
               <dd className="text-zinc-700">
-                {row.icd_codes.length === 0
+                {(row.icd_codes ?? []).length === 0
                   ? "—"
-                  : row.icd_codes.map((c) => (
+                  : (row.icd_codes ?? []).map((c) => (
                       <span key={c.code} className="mr-2">
                         <span className="font-mono">{c.code}</span>{" "}
                         <span className="text-zinc-500">{c.name}</span>
@@ -169,11 +169,11 @@ export default function DetailPanel({
               </dd>
               <Row
                 label="ATC"
-                value={row.atc_codes.length === 0 ? "—" : row.atc_codes.join(", ")}
+                value={(row.atc_codes ?? []).length === 0 ? "—" : (row.atc_codes ?? []).join(", ")}
               />
               <Row
                 label="PZN"
-                value={row.pzn.length === 0 ? "—" : row.pzn.join(", ")}
+                value={(row.pzn ?? []).length === 0 ? "—" : (row.pzn ?? []).join(", ")}
               />
             </dl>
           </section>
