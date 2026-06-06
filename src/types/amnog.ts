@@ -40,6 +40,7 @@ export interface Verfahren {
   pharmazeutischer_unternehmer: string | null;
   therapeutisches_gebiet_text: string | null;
   therapiegebiet: string | null;
+  therapiegebiet_atc: string | null;
   orphan_drug: boolean;
   atmp: boolean;
   reg_status: string | null;

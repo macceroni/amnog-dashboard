@@ -2,9 +2,10 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import type { FlatRow } from "@/types/amnog";
+import { cleanPU } from "@/lib/format";
 import DetailPanel from "./DetailPanel";
 
-type SortKey = "handelsname" | "wirkstoff_inn" | "therapiegebiet" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
+type SortKey = "handelsname" | "wirkstoff_inn" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
 type SortDir = "asc" | "desc";
 
 function display(value: string | null): string {
@@ -35,6 +36,7 @@ function compareValues(a: string | null, b: string | null, dir: SortDir, isDate 
 const COLUMNS: { key: SortKey; label: string; isDate?: boolean }[] = [
   { key: "handelsname", label: "Handelsname" },
   { key: "wirkstoff_inn", label: "Wirkstoff" },
+  { key: "pharmazeutischer_unternehmer", label: "Unternehmen" },
   { key: "therapiegebiet", label: "Therapiegebiet" },
   { key: "zn_ausmass", label: "Ausmaß" },
   { key: "zn_wahrscheinlichkeit", label: "Wahrscheinlichkeit" },
@@ -154,7 +156,12 @@ export default function AmnogTable({
   const filtered = useMemo(() => {
     const term = search.trim().toLowerCase();
     return rows.filter((r) => {
-      if (term && !r.handelsname?.toLowerCase().includes(term) && !r.wirkstoff_inn?.toLowerCase().includes(term)) {
+      if (
+        term &&
+        !r.handelsname?.toLowerCase().includes(term) &&
+        !r.wirkstoff_inn?.toLowerCase().includes(term) &&
+        !r.pharmazeutischer_unternehmer?.toLowerCase().includes(term)
+      ) {
         return false;
       }
       if (selectedGebiete.size > 0 && !selectedGebiete.has(r.therapiegebiet ?? "")) {
@@ -204,7 +211,7 @@ export default function AmnogTable({
       <div className="flex flex-wrap items-center gap-3 mb-4">
         <input
           type="search"
-          placeholder="Handelsname oder Wirkstoff suchen…"
+          placeholder="Handelsname, Wirkstoff oder Unternehmen suchen…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="border border-zinc-200 rounded-lg px-3 py-2 text-sm w-72 focus:outline-none focus:ring-2 focus:ring-zinc-300"
@@ -259,6 +266,7 @@ export default function AmnogTable({
               >
                 <td className="px-4 py-2 font-medium text-zinc-900">{display(row.handelsname)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.wirkstoff_inn)}</td>
+                <td className="px-4 py-2 text-zinc-700">{cleanPU(row.pharmazeutischer_unternehmer)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.therapiegebiet)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.zn_ausmass)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.zn_wahrscheinlichkeit)}</td>

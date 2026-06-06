@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { FlatRow } from "@/types/amnog";
 import { AUSMASS_BADGE } from "@/lib/colors";
+import { cleanPU } from "@/lib/format";
 
 function val(v: string | null): string {
   return v === null ? "—" : v;
@@ -112,6 +113,7 @@ export default function DetailPanel({
               {val(row.wirkstoff_inn)}
               {row.wirkstoff_kombination ? ` / ${row.wirkstoff_kombination}` : ""}
             </p>
+            <p className="text-sm text-zinc-400 mt-0.5">{cleanPU(row.pharmazeutischer_unternehmer)}</p>
             <p className="text-xs font-mono text-zinc-400 mt-1">{row.id_be_akz}</p>
           </div>
           <button
@@ -126,6 +128,11 @@ export default function DetailPanel({
         <div className="px-6 py-5 space-y-6 text-sm">
           {/* Badges */}
           <div className="flex flex-wrap gap-2">
+            {row.therapiegebiet && (
+              <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-zinc-100 text-zinc-600">
+                {row.therapiegebiet}
+              </span>
+            )}
             {row.orphan_drug && (
               <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
                 Orphan Drug
@@ -243,7 +250,7 @@ export default function DetailPanel({
               Verfahren
             </h3>
             <dl className="space-y-1.5">
-              <Row label="Unternehmen" value={val(row.pharmazeutischer_unternehmer)} />
+              <Row label="Unternehmen" value={cleanPU(row.pharmazeutischer_unternehmer)} />
               <Row label="Therapiegebiet" value={val(row.therapiegebiet)} />
               <Row label="Beschlussdatum" value={formatDate(row.datum_beschluss)} />
               <Row
