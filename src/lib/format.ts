@@ -67,6 +67,11 @@ export function displayPU(name: string | null): string {
   return clean.replace(/\S+/g, titleCaseToken);
 }
 
+export function capitalizeFirst(s: string | null): string {
+  if (!s) return "—";
+  return s.replace(/^[a-zäöüß]/, c => c.toUpperCase());
+}
+
 export function displayIndikation(tgt: string | null): string {
   if (!tgt) return "—";
   const m = tgt.match(/^(.+?)\s*\([^)]+\)\s*$/);

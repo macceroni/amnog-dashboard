@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import type { FlatRow } from "@/types/amnog";
-import { displayPU, displayIndikation } from "@/lib/format";
+import { displayPU, displayIndikation, capitalizeFirst } from "@/lib/format";
 import DetailPanel from "./DetailPanel";
 
 type SortKey = "handelsname" | "wirkstoff_inn" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "therapeutisches_gebiet_text" | "patientengruppe" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
@@ -209,7 +209,7 @@ export default function AmnogTable({
 
   const therapiegebiete = useMemo(() => {
     const vals = new Set<string>();
-    for (const r of rows) if (r.therapiegebiet) vals.add(r.therapiegebiet);
+    for (const r of rows) if (r.therapiegebiet) vals.add(capitalizeFirst(r.therapiegebiet));
     return [...vals].sort((a, b) => a.localeCompare(b, "de"));
   }, [rows]);
 
@@ -230,7 +230,7 @@ export default function AmnogTable({
       ) {
         return false;
       }
-      if (selectedGebiete.size > 0 && !selectedGebiete.has(r.therapiegebiet ?? "")) {
+      if (selectedGebiete.size > 0 && !selectedGebiete.has(capitalizeFirst(r.therapiegebiet))) {
         return false;
       }
       if (selectedAusmass.size > 0 && !selectedAusmass.has(r.zn_ausmass ?? "")) {
@@ -343,7 +343,7 @@ export default function AmnogTable({
                 <td className="px-4 py-2 font-medium text-zinc-900">{display(row.handelsname)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.wirkstoff_inn)}</td>
                 <td className="px-4 py-2 text-zinc-700">{displayPU(row.pharmazeutischer_unternehmer)}</td>
-                <td className="px-4 py-2 text-zinc-700">{display(row.therapiegebiet)}</td>
+                <td className="px-4 py-2 text-zinc-700">{capitalizeFirst(row.therapiegebiet)}</td>
                 <td className="px-4 py-2 text-zinc-700 max-w-[22rem]">
                   <div
                     className="overflow-hidden whitespace-nowrap text-ellipsis"
