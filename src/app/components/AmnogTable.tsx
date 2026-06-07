@@ -2,10 +2,10 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import type { FlatRow } from "@/types/amnog";
-import { displayPU } from "@/lib/format";
+import { displayPU, displayIndikation } from "@/lib/format";
 import DetailPanel from "./DetailPanel";
 
-type SortKey = "handelsname" | "wirkstoff_inn" | "patientengruppe" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
+type SortKey = "handelsname" | "wirkstoff_inn" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "therapeutisches_gebiet_text" | "patientengruppe" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
 type SortDir = "asc" | "desc";
 
 function display(value: string | null): string {
@@ -38,6 +38,7 @@ const COLUMNS: { key: SortKey; label: string; isDate?: boolean }[] = [
   { key: "wirkstoff_inn", label: "Wirkstoff" },
   { key: "pharmazeutischer_unternehmer", label: "Unternehmen" },
   { key: "therapiegebiet", label: "Therapiegebiet" },
+  { key: "therapeutisches_gebiet_text", label: "Indikation" },
   { key: "patientengruppe", label: "Patientengruppe" },
   { key: "zn_ausmass", label: "Ausmaß" },
   { key: "zn_wahrscheinlichkeit", label: "Wahrscheinlichkeit" },
@@ -343,6 +344,14 @@ export default function AmnogTable({
                 <td className="px-4 py-2 text-zinc-700">{display(row.wirkstoff_inn)}</td>
                 <td className="px-4 py-2 text-zinc-700">{displayPU(row.pharmazeutischer_unternehmer)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.therapiegebiet)}</td>
+                <td className="px-4 py-2 text-zinc-700 max-w-[22rem]">
+                  <div
+                    className="overflow-hidden whitespace-nowrap text-ellipsis"
+                    title={displayIndikation(row.therapeutisches_gebiet_text)}
+                  >
+                    {displayIndikation(row.therapeutisches_gebiet_text)}
+                  </div>
+                </td>
                 <td className="px-4 py-2 text-zinc-700 max-w-[14rem]">
                   <div
                     className="overflow-hidden whitespace-nowrap text-ellipsis"

@@ -66,3 +66,11 @@ export function displayPU(name: string | null): string {
   if (clean === "—") return "—";
   return clean.replace(/\S+/g, titleCaseToken);
 }
+
+export function displayIndikation(tgt: string | null): string {
+  if (!tgt) return "—";
+  const m = tgt.match(/^(.+?)\s*\([^)]+\)\s*$/);
+  const before = m ? m[1].trim() : tgt.trim();
+  if (!before) return "—";
+  return before.charAt(0).toUpperCase() + before.slice(1);
+}
