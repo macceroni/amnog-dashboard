@@ -5,7 +5,7 @@ import type { FlatRow } from "@/types/amnog";
 import { displayPU } from "@/lib/format";
 import DetailPanel from "./DetailPanel";
 
-type SortKey = "handelsname" | "wirkstoff_inn" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
+type SortKey = "handelsname" | "wirkstoff_inn" | "patientengruppe" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
 type SortDir = "asc" | "desc";
 
 function display(value: string | null): string {
@@ -36,6 +36,7 @@ function compareValues(a: string | null, b: string | null, dir: SortDir, isDate 
 const COLUMNS: { key: SortKey; label: string; isDate?: boolean }[] = [
   { key: "handelsname", label: "Handelsname" },
   { key: "wirkstoff_inn", label: "Wirkstoff" },
+  { key: "patientengruppe", label: "Indikation" },
   { key: "pharmazeutischer_unternehmer", label: "Unternehmen" },
   { key: "therapiegebiet", label: "Therapiegebiet" },
   { key: "zn_ausmass", label: "Ausmaß" },
@@ -328,6 +329,7 @@ export default function AmnogTable({
                   {sortIndicator(col.key)}
                 </th>
               ))}
+              <th className="text-left px-4 py-3 font-medium text-zinc-600 whitespace-nowrap select-none">PG</th>
             </tr>
           </thead>
           <tbody>
@@ -339,11 +341,22 @@ export default function AmnogTable({
               >
                 <td className="px-4 py-2 font-medium text-zinc-900">{display(row.handelsname)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.wirkstoff_inn)}</td>
+                <td className="px-4 py-2 text-zinc-700 max-w-[14rem]">
+                  <div
+                    className="overflow-hidden whitespace-nowrap text-ellipsis"
+                    title={row.patientengruppe ?? ""}
+                  >
+                    {row.patientengruppe ?? "—"}
+                  </div>
+                </td>
                 <td className="px-4 py-2 text-zinc-700">{displayPU(row.pharmazeutischer_unternehmer)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.therapiegebiet)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.zn_ausmass)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.zn_wahrscheinlichkeit)}</td>
                 <td className="px-4 py-2 text-zinc-500 tabular-nums">{formatDate(row.datum_beschluss)}</td>
+                <td className="px-4 py-2 text-zinc-400 tabular-nums text-xs whitespace-nowrap">
+                  {row.pg_total > 1 ? `${row.pg_index} von ${row.pg_total}` : "—"}
+                </td>
               </tr>
             ))}
           </tbody>

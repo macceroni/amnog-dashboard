@@ -6,9 +6,11 @@ export default function Home() {
   const data = loadAmnogData();
 
   const rows: FlatRow[] = data.verfahren.flatMap((v) =>
-    v.patientengruppen.map((p) => ({
+    v.patientengruppen.map((p, idx) => ({
       pat_gr_id: p.pat_gr_id,
       id_be_akz: v.id_be_akz,
+      pg_index: idx + 1,
+      pg_total: v.patientengruppen.length,
       handelsname: v.handelsname,
       wirkstoff_inn: p.wirkstoff_inn,
       wirkstoff_kombination: p.wirkstoff_kombination,

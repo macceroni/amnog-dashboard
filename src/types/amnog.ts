@@ -59,6 +59,8 @@ export interface AmnogData {
 export interface FlatRow {
   pat_gr_id: string;
   id_be_akz: string;
+  pg_index: number;
+  pg_total: number;
   handelsname: string | null;
   wirkstoff_inn: string | null;
   wirkstoff_kombination: string | null;
