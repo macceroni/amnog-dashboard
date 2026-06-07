@@ -52,6 +52,29 @@ Quelle: G-BA AIS-XML, aufbereitet von [dossier_scout](https://github.com/maccero
 
 ## Methoden und Limitationen
 
+### Datengrundlage: aktuell gültige Nutzenbewertungen
+
+Dieser Datensatz basiert auf der maschinenlesbaren AIS-Fassung des G-BA
+(Arztinformationssystem). Diese enthält die aktuell zu implementierenden
+Beschlüsse der Nutzenbewertung nach §35a SGB V mit ihren Patientengruppen
+(1.018 Verfahren, 1.682 Patientengruppen).
+
+Nicht enthalten sind:
+- durch Neubewertungen abgelöste oder aufgehobene Beschlüsse (frühere
+  Versionen, die durch neuere ersetzt wurden),
+- Verfahren ohne Patientengruppen-Nutzenbewertung, etwa direkte
+  Festbetragsgruppen-Zuordnungen.
+
+Der Datensatz zeigt damit den aktuell gültigen Stand der Nutzenbewertungen,
+nicht die kumulative Historie aller je gefassten G-BA-Beschlüsse. Kumulative
+Zählungen anderer Quellen (z. B. vfa: „über 2.000 Patientengruppen")
+schließen abgelöste und Sonderverfahren ein und liegen daher höher. Beide
+Zählweisen sind korrekt — sie beantworten verschiedene Fragen
+(„was gilt aktuell?" vs. „was wurde insgesamt je entschieden?").
+
+Quelle dieser Definition: G-BA, AIS — Maschinenlesbare Fassung der Beschlüsse
+(g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/ais/).
+
 ### Therapiegebiet
 Abgeleitet aus dem Indikations-Klammerbegriff der G-BA-Steckbriefe (14 Kategorien). Im JSON-Datensatz liegt zusätzlich `therapiegebiet_atc` vor — abgeleitet aus der ATC-Wirkstoffklasse statt aus der Indikation.
 
