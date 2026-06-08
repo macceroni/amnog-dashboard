@@ -44,6 +44,45 @@ export default function Home() {
       <p className="text-zinc-500 text-sm mb-8">
         Datenstand: {data.generated_at.slice(0, 10)} · Quelle: {data.source}
       </p>
+
+      <section className="mb-8 border border-zinc-200 rounded-xl bg-zinc-50 p-5">
+        <h2 className="text-sm font-semibold text-zinc-700 mb-1">Daten herunterladen</h2>
+        <p className="text-xs text-zinc-500 mb-4">
+          Alle Beschlussdaten stehen zur freien Weiterverwendung bereit (amtliche Werke,{" "}
+          §&nbsp;5 UrhG).
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <a
+            href="/amnog_web.json"
+            download
+            className="flex items-start gap-3 rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400 transition-colors"
+          >
+            <span className="mt-0.5 shrink-0 rounded px-1.5 py-0.5 font-mono text-[10px] font-semibold bg-zinc-800 text-white">
+              JSON
+            </span>
+            <div>
+              <p className="text-sm font-medium text-zinc-900">amnog_web.json</p>
+              <p className="text-xs text-zinc-500 mt-0.5">~7,8 MB · vollständig, verschachtelt</p>
+              <p className="text-xs text-zinc-400 mt-1">Für Entwickler, APIs, eigene Auswertungen</p>
+            </div>
+          </a>
+          <a
+            href="/amnog_flat.csv"
+            download
+            className="flex items-start gap-3 rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400 transition-colors"
+          >
+            <span className="mt-0.5 shrink-0 rounded px-1.5 py-0.5 font-mono text-[10px] font-semibold bg-emerald-700 text-white">
+              CSV
+            </span>
+            <div>
+              <p className="text-sm font-medium text-zinc-900">amnog_flat.csv</p>
+              <p className="text-xs text-zinc-500 mt-0.5">~1 MB · flach, eine Zeile pro Patientengruppe</p>
+              <p className="text-xs text-zinc-400 mt-1">Für R, Excel, Statistik-Tools</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
       <DashboardShell rows={rows} />
     </main>
   );
