@@ -104,6 +104,7 @@ export default function Charts({ rows, selectedGebiete, selectedAusmass, onGebie
           <HorizontalBars
             items={gebietData.sorted.map(([label, count]) => ({
               label,
+              displayLabel: GEBIET_LABEL[label],
               count,
               color: "#71717a",
             }))}
@@ -195,9 +196,21 @@ function HeroChart({ data }: { data: HeroData }) {
   );
 }
 
+// Nur Anzeige-Kürzel — der Datenwert (für Filter) bleibt der Original-String
+const GEBIET_LABEL: Record<string, string> = {
+  "onkologische Erkrankungen":                           "Onkologie",
+  "Krankheiten des Nervensystems":                       "Nervensystem",
+  "Krankheiten des Blutes und der blutbildenden Organe": "Blut & Blutbildung",
+  "Krankheiten des Muskel-Skelett-Systems":              "Muskel-Skelett",
+  "Krankheiten des Atmungssystems":                      "Atmungssystem",
+  "Krankheiten des Verdauungssystems":                   "Verdauungssystem",
+  "Krankheiten des Urogenitalsystems":                   "Urogenitalsystem",
+  "Herz-Kreislauf-Erkrankungen":                         "Herz-Kreislauf",
+};
+
 // ─── Horizontale Balken (Ausmaß + Therapiegebiet) ────────────────────────────
 
-type BarItem = { label: string; count: number; color: string };
+type BarItem = { label: string; displayLabel?: string; count: number; color: string };
 
 function HorizontalBars({
   items,
@@ -220,7 +233,7 @@ function HorizontalBars({
 
   return (
     <div className="space-y-1.5">
-      {items.map(({ label, count, color }) => {
+      {items.map(({ label, displayLabel, count, color }) => {
         const widthPct = (count / maxCount) * 100;
         const isActive = selected.has(label);
         const dimmed = anySelected && !isActive;
@@ -232,17 +245,17 @@ function HorizontalBars({
             className={`w-full flex items-center gap-2 text-left transition-opacity ${dimmed ? "opacity-35" : "opacity-100"}`}
           >
             <span className={`text-[10px] text-zinc-500 shrink-0 truncate text-right leading-tight ${labelWidth}`}>
-              {label}
+              {displayLabel ?? label}
             </span>
-            <div className="flex-1 relative h-4 bg-zinc-50 rounded-sm overflow-hidden">
+            <div className="flex-1 h-4 bg-zinc-50 rounded-sm overflow-hidden">
               <div
                 className="h-full rounded-sm transition-[width] duration-200"
                 style={{ width: `${widthPct}%`, backgroundColor: color }}
               />
-              <span className="absolute right-1 inset-y-0 flex items-center text-[10px] text-zinc-500 font-medium">
-                {count}
-              </span>
             </div>
+            <span className="text-[10px] text-zinc-400 font-medium w-8 text-right shrink-0 leading-none self-center">
+              {count}
+            </span>
           </button>
         );
       })}

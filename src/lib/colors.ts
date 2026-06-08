@@ -1,28 +1,28 @@
 // Tailwind-Klassen für Badges (DetailPanel, Tabellenzellen)
 export const AUSMASS_BADGE: Record<string, string> = {
   "Erheblich":                        "bg-green-100 text-green-800",
-  "Beträchtlich":                     "bg-emerald-100 text-emerald-800",
-  "Gering":                           "bg-yellow-100 text-yellow-800",
-  "Geringerer Nutzen":                "bg-orange-100 text-orange-800",
-  "Gilt als belegt (Orphan)":         "bg-purple-100 text-purple-800",
-  "Gilt als belegt (Antibiotikum)":   "bg-blue-100 text-blue-800",
+  "Beträchtlich":                     "bg-emerald-100 text-emerald-700",
+  "Gering":                           "bg-green-50 text-green-600",
+  "Nicht quantifizierbar":            "bg-stone-100 text-stone-600",
+  "Gilt als belegt (Orphan)":         "bg-slate-100 text-slate-600",
+  "Gilt als belegt (Antibiotikum)":   "bg-slate-200 text-slate-700",
   "Gilt als belegt":                  "bg-slate-100 text-slate-600",
-  "Kein Zusatznutzen belegt":         "bg-red-100 text-red-700",
-  "Nicht quantifizierbar":            "bg-zinc-100 text-zinc-700",
+  "Geringerer Nutzen":                "bg-amber-50 text-amber-700",
+  "Kein Zusatznutzen belegt":         "bg-slate-100 text-slate-500",
 };
 
-// Hex-Farben für Chart-Balken (satter als die Badge-Variante)
+// Hex-Farben für Chart-Balken
 export const AUSMASS_BAR: Record<string, string> = {
-  "Erheblich":                        "#4ade80",
-  "Beträchtlich":                     "#34d399",
-  "Gering":                           "#facc15",
-  "Geringerer Nutzen":                "#fb923c",
-  "Gilt als belegt (Orphan)":         "#c084fc",
-  "Gilt als belegt (Antibiotikum)":   "#60a5fa",
-  "Gilt als belegt":                  "#94a3b8",
-  "Kein Zusatznutzen belegt":         "#f87171",
-  "Nicht quantifizierbar":            "#a1a1aa",
-  "—":                                "#d4d4d8",
+  "Erheblich":                        "#1e7d45",
+  "Beträchtlich":                     "#52b788",
+  "Gering":                           "#b7e4c7",
+  "Nicht quantifizierbar":            "#d9e8d4",
+  "Gilt als belegt (Orphan)":         "#9ab8c8",
+  "Gilt als belegt (Antibiotikum)":   "#9ab8c8",
+  "Gilt als belegt":                  "#9ab8c8",
+  "Geringerer Nutzen":                "#d4b896",
+  "Kein Zusatznutzen belegt":         "#c8d3d6",
+  "—":                                "#e5e7eb",
 };
 
 // Kanonische Reihenfolge für Charts und Legenden
