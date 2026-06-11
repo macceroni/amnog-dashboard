@@ -46,11 +46,19 @@ Die Rohdaten sind offen und können frei verwendet werden.
 | [`amnog_web.json`](/amnog_web.json) | JSON · 7,8 MB | Vollständig, verschachtelt (Verfahren → Patientengruppen). Für Entwickler, APIs, eigene Auswertungen. |
 | [`amnog_flat.csv`](/amnog_flat.csv) | CSV · 1 MB | Flach, eine Zeile pro Patientengruppe. Für R, Excel, Pandas, Statistik. |
 
-Quelle: G-BA AIS-XML, aufbereitet von [dossier_scout](https://github.com/macceroni/dossier_scout).
+Quelle: G-BA AIS-XML sowie gecrawlte G-BA-Steckbriefe, aufbereitet über eine eigene ETL-Pipeline (Repo nicht öffentlich).
 
 ---
 
 ## Methoden und Limitationen
+
+### Datenquellen
+
+Die Daten in diesem Datensatz stammen aus drei Quellen:
+
+- **AIS-XML** (G-BA Arztinformationssystem): Basis-Quelle. Enthält Verfahren, Patientengruppen, Zusatznutzen (Ausmaß, Wahrscheinlichkeit), ICD/ATC/PZN-Codes, Endpunkte, Zulassungsstatus und Orphan-Drug-Kennzeichnung.
+- **HTML-Steckbriefe** (g-ba.de, gecrawlt): Liefert pharmazeutischen Unternehmer und `therapeutisches_gebiet_text` (Freitext-Indikation) — diese Felder stehen nicht in der XML.
+- **Abgeleitete Felder**: `therapiegebiet` (aus dem Klammerbegriff von `therapeutisches_gebiet_text`) und `therapiegebiet_atc` (aus der ATC-Hauptgruppe) werden automatisch aus den Quelldaten berechnet.
 
 ### Datengrundlage: aktuell gültige Nutzenbewertungen
 
@@ -97,7 +105,7 @@ Zwei Verfahrenstypen gelten per Gesetz als mit Zusatznutzen belegt:
 ICD-Codes, ATC-Codes und PZN können leer sein (`—` in der Anzeige) — das spiegelt die Quellsituation wider, keine Datenanreicherung. `"Unklar"` bedeutet: Feld vorhanden, aber nicht normalisierbar.
 
 ### Reproduzierbarkeit
-Alle Werte stammen direkt aus den G-BA-Rohdaten (AIS-XML). Keine geschätzten oder erfundenen Werte. Jede Zeile verlinkt auf die G-BA-Originalquelle.
+Alle Werte stammen aus G-BA-Rohdaten (AIS-XML und HTML-Steckbriefe). Keine geschätzten oder erfundenen Werte. Jede Zeile verlinkt auf die G-BA-Originalquelle.
 
 ---
 
@@ -113,5 +121,5 @@ Alle Werte stammen direkt aus den G-BA-Rohdaten (AIS-XML). Keine geschätzten od
 ## Tech Stack
 
 - **Frontend**: Next.js (App Router), TypeScript, Tailwind CSS
-- **Daten**: `amnog_web.json` — erzeugt von [dossier_scout](https://github.com/macceroni/dossier_scout) aus dem G-BA AIS-XML
+- **Daten**: `amnog_web.json` — erzeugt aus G-BA AIS-XML und HTML-Steckbriefe über eine eigene ETL-Pipeline (Repo nicht öffentlich)
 - **Deployment**: Vercel
