@@ -346,21 +346,21 @@ export default function AmnogTable({
         </span>
       </div>
 
-      <div className="overflow-x-auto rounded-xl border border-zinc-200">
+      <div className="overflow-x-auto overflow-y-auto max-h-[75vh] rounded-xl border border-zinc-200">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-zinc-50 border-b border-zinc-200">
+            <tr>
               {COLUMNS.map((col) => (
                 <th
                   key={col.key}
                   onClick={() => handleSort(col.key)}
-                  className="text-left px-4 py-3 font-medium text-zinc-600 cursor-pointer select-none whitespace-nowrap hover:text-zinc-900"
+                  className="sticky top-0 bg-zinc-50 z-10 border-b border-zinc-200 text-left px-4 py-3 font-medium text-zinc-600 cursor-pointer select-none whitespace-nowrap hover:text-zinc-900"
                 >
                   {col.label}
                   {sortIndicator(col.key)}
                 </th>
               ))}
-              <th className="text-left px-4 py-3 font-medium text-zinc-600 whitespace-nowrap select-none">PG</th>
+              <th className="sticky top-0 bg-zinc-50 z-10 border-b border-zinc-200 text-left px-4 py-3 font-medium text-zinc-600 whitespace-nowrap select-none">PG</th>
             </tr>
           </thead>
           <tbody>
