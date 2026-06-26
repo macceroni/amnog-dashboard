@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-06T16:16:12Z",
+  "generated_at": "2026-06-26T22:43:48Z",
   "source": "G-BA AIS-XML",
-  "count_verfahren": 1018,
-  "count_patientengruppen": 1682,
+  "count_verfahren": 1025,
+  "count_patientengruppen": 1690,
   "verfahren": [
     {
       "id_be": "3",
@@ -341,6 +341,7 @@
             "19415502",
             "19688803",
             "19782057",
+            "20044353",
             "20044376",
             "20359660",
             "20359677"
@@ -438,6 +439,7 @@
             "19415502",
             "19688803",
             "19782057",
+            "20044353",
             "20044376",
             "20359660",
             "20359677"
@@ -1078,7 +1080,8 @@
             "19965846",
             "20006016",
             "20218103",
-            "20304707"
+            "20304707",
+            "20319301"
           ],
           "zvt_best": "Palliative Behandlung mit Dexamethason, Prednison, Prednisolon oder Methylprednisolon sowie \"Best Supportive Care\" (z.B. adäquate Schmerztherapie).",
           "zn_ausmass": "Beträchtlich",
@@ -1246,7 +1249,8 @@
             "19965846",
             "20006016",
             "20218103",
-            "20304707"
+            "20304707",
+            "20319301"
           ],
           "zvt_best": "Docetaxel in Kombination mit Prednison oder Prednisolon (Docetaxel-Retherapie)",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -3642,7 +3646,9 @@
             "19971835",
             "20056020",
             "20227533",
-            "20229006"
+            "20229006",
+            "20399783",
+            "20399808"
           ],
           "zvt_best": "Ranibizumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -3760,6 +3766,7 @@
             "19415502",
             "19688803",
             "19782057",
+            "20044353",
             "20044376",
             "20359660",
             "20359677"
@@ -4086,7 +4093,8 @@
             "19965846",
             "20006016",
             "20218103",
-            "20304707"
+            "20304707",
+            "20319301"
           ],
           "zvt_best": "Das abwartende Vorgehen unter Beibehaltung der bestehenden konventionellen Androgendeprivation oder gegebenenfalls die kombinierte, maximale Androgenblockade mit einem nichtsteroidalen Antiandrogen (Flutamid, Bicalutamid).",
           "zn_ausmass": "Beträchtlich",
@@ -9887,7 +9895,9 @@
             "19971835",
             "20056020",
             "20227533",
-            "20229006"
+            "20229006",
+            "20399783",
+            "20399808"
           ],
           "zvt_best": "Dexamethason (Intravitreales Implantat) oder Ranibizumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -10354,7 +10364,9 @@
             "16507178",
             "17168318",
             "17888811",
-            "19885900"
+            "19885900",
+            "20399642",
+            "20518756"
           ],
           "zvt_best": "Best Supportive Care",
           "zn_ausmass": "Nicht quantifizierbar",
@@ -13671,6 +13683,7 @@
             "11295412",
             "11295429",
             "16632937",
+            "20143865",
             "20399688",
             "20414270"
           ],
@@ -13739,6 +13752,7 @@
             "11295412",
             "11295429",
             "16632937",
+            "20143865",
             "20399688",
             "20414270"
           ],
@@ -13807,6 +13821,7 @@
             "11295412",
             "11295429",
             "16632937",
+            "20143865",
             "20399688",
             "20414270"
           ],
@@ -15188,7 +15203,9 @@
             "19971835",
             "20056020",
             "20227533",
-            "20229006"
+            "20229006",
+            "20399783",
+            "20399808"
           ],
           "zvt_best": "Ranibizumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -19077,7 +19094,8 @@
             "19965846",
             "20006016",
             "20218103",
-            "20304707"
+            "20304707",
+            "20319301"
           ],
           "zvt_best": "- die konventionelle Androgendeprivation, gegebenenfalls in Kombination mit einem nicht-steroidalen Antiandrogen (Flutamid oder Bicalutamid)\noder\n- die konventionelle Androgendeprivation in Kombination mit Docetaxel und Prednison oder Prednisolon.",
           "zn_ausmass": "Beträchtlich",
@@ -22422,7 +22440,6 @@
             "18802763",
             "18802786",
             "18830794",
-            "18878418",
             "18878430",
             "19056049",
             "19116107",
@@ -25272,6 +25289,7 @@
             "19415502",
             "19688803",
             "19782057",
+            "20044353",
             "20044376",
             "20359660",
             "20359677"
@@ -25389,6 +25407,7 @@
             "19415502",
             "19688803",
             "19782057",
+            "20044353",
             "20044376",
             "20359660",
             "20359677"
@@ -29777,7 +29796,9 @@
             "19971835",
             "20056020",
             "20227533",
-            "20229006"
+            "20229006",
+            "20399783",
+            "20399808"
           ],
           "zvt_best": "Ranibizumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -29889,6 +29910,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -34510,6 +34532,7 @@
             "11295412",
             "11295429",
             "16632937",
+            "20143865",
             "20399688",
             "20414270"
           ],
@@ -34594,6 +34617,7 @@
             "11295412",
             "11295429",
             "16632937",
+            "20143865",
             "20399688",
             "20414270"
           ],
@@ -35693,7 +35717,9 @@
             "19971835",
             "20056020",
             "20227533",
-            "20229006"
+            "20229006",
+            "20399783",
+            "20399808"
           ],
           "zvt_best": "Ranibizumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -35805,6 +35831,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -35923,6 +35950,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -68907,6 +68935,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -69025,6 +69054,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -69143,6 +69173,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -69261,6 +69292,7 @@
             "17847723",
             "17922608",
             "17922614",
+            "17973770",
             "17997813",
             "18111533",
             "18159876",
@@ -69875,6 +69907,7 @@
             "11295412",
             "11295429",
             "16632937",
+            "20143865",
             "20399688",
             "20414270"
           ],
@@ -107789,7 +107822,9 @@
             "14445711",
             "14445728",
             "19871559",
-            "19913619"
+            "19913619",
+            "20189407",
+            "20189436"
           ],
           "zvt_best": "Metoprolol oder Propranolol oder Flunarizin oder Topiramat oder Amitriptylin unter Berücksichtigung der Zulassung und der Vortherapie",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -107853,7 +107888,9 @@
             "14445711",
             "14445728",
             "19871559",
-            "19913619"
+            "19913619",
+            "20189407",
+            "20189436"
           ],
           "zvt_best": "Valproinsäure[1] oder Clostridium botulinum Toxin Typ A[2]\n\n[1 ] Entsprechend Anlage VI zum Abschnitt K der Arzneimittel-Richtlinie: wenn eine Behandlung mit allen anderen dafür zugelassenen Arzneimitteln nicht erfolgreich war oder kontraindiziert ist.\n[2] Entsprechend der Zulassung nur für die chronische Migräne.",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -107917,7 +107954,9 @@
             "14445711",
             "14445728",
             "19871559",
-            "19913619"
+            "19913619",
+            "20189407",
+            "20189436"
           ],
           "zvt_best": "Best Supportive Care",
           "zn_ausmass": "Beträchtlich",
@@ -109616,7 +109655,7 @@
       "patientengruppen": [
         {
           "pat_gr_id": "1066",
-          "wirkstoff_inn": "Brexucabtagen-Autoleucel",
+          "wirkstoff_inn": "Brexucabtagen autoleucel",
           "wirkstoff_kombination": null,
           "datum_beschluss": "2021-08-05",
           "datum_befristung_bis": null,
@@ -111347,12 +111386,12 @@
           "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
           "icd_codes": [
             {
-              "code": "J06.9",
-              "name": "Akute Infektion der oberen Atemwege, nicht näher bezeichnet"
-            },
-            {
               "code": "B34.2",
               "name": "Infektion durch Coronaviren nicht näher bezeichneter Lokalisation"
+            },
+            {
+              "code": "J06.9",
+              "name": "Akute Infektion der oberen Atemwege, nicht näher bezeichnet"
             }
           ],
           "atc_codes": [
@@ -115648,7 +115687,9 @@
             "18598989",
             "19743703",
             "19743726",
+            "19761440",
             "20354177",
+            "20387053",
             "20399777"
           ],
           "zvt_best": "Dupilumab",
@@ -121454,7 +121495,7 @@
           "wirkstoff_inn": "Odevixibat",
           "wirkstoff_kombination": null,
           "datum_beschluss": "2022-03-03",
-          "datum_befristung_bis": "2027-06-01",
+          "datum_befristung_bis": "2029-07-01",
           "patientengruppe": "Kinder, Jugendliche und Erwachsene ab einem Alter von 6 Monaten mit progressiver familiärer intrahepatischer Cholestase",
           "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
           "icd_codes": [
@@ -122384,7 +122425,9 @@
             "16507178",
             "17168318",
             "17888811",
-            "19885900"
+            "19885900",
+            "20399642",
+            "20518756"
           ],
           "zvt_best": "Cabozantinib",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -122881,7 +122924,7 @@
       "therapeutisches_gebiet_text": "Tuberkulose (Infektionskrankheiten)",
       "therapiegebiet": "Infektionskrankheiten",
       "therapiegebiet_atc": "Infektiologie",
-      "orphan_drug": true,
+      "orphan_drug": false,
       "atmp": false,
       "reg_status": "Beschluss_orph",
       "patientengruppen": [
@@ -122897,10 +122940,6 @@
             {
               "code": "A16.2",
               "name": "Lungentuberkulose ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
-            },
-            {
-              "code": "A16.7",
-              "name": "Primäre Tuberkulose der Atmungsorgane ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
             },
             {
               "code": "A16.0",
@@ -122919,16 +122958,20 @@
               "name": "Lungentuberkulose, histologisch gesichert"
             },
             {
-              "code": "A15.7",
-              "name": "Primäre Tuberkulose der Atmungsorgane, bakteriologisch, molekularbiologisch oder histologisch gesichert"
-            },
-            {
               "code": "A16.1",
               "name": "Lungentuberkulose, bakteriologische, molekularbiologische und histologische Untersuchung nicht durchgeführt"
             },
             {
               "code": "A15.1",
               "name": "Lungentuberkulose, nur durch Kultur gesichert"
+            },
+            {
+              "code": "A16.7",
+              "name": "Primäre Tuberkulose der Atmungsorgane ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
+            },
+            {
+              "code": "A15.7",
+              "name": "Primäre Tuberkulose der Atmungsorgane, bakteriologisch, molekularbiologisch oder histologisch gesichert"
             }
           ],
           "atc_codes": [
@@ -122971,40 +123014,40 @@
           "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
           "icd_codes": [
             {
-              "code": "A16.2",
-              "name": "Lungentuberkulose ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
-            },
-            {
-              "code": "A16.7",
-              "name": "Primäre Tuberkulose der Atmungsorgane ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
-            },
-            {
-              "code": "A16.0",
-              "name": "Lungentuberkulose, weder bakteriologisch, molekularbiologisch noch histologisch gesichert"
-            },
-            {
-              "code": "A15.3",
-              "name": "Lungentuberkulose, durch sonstige und nicht näher bezeichnete Untersuchungsverfahren gesichert"
-            },
-            {
               "code": "A15.0",
               "name": "Lungentuberkulose, durch mikroskopische Untersuchung des Sputums gesichert, mit oder ohne Nachweis durch Kultur oder molekularbiologische Verfahren"
+            },
+            {
+              "code": "A15.1",
+              "name": "Lungentuberkulose, nur durch Kultur gesichert"
             },
             {
               "code": "A15.2",
               "name": "Lungentuberkulose, histologisch gesichert"
             },
             {
+              "code": "A15.3",
+              "name": "Lungentuberkulose, durch sonstige und nicht näher bezeichnete Untersuchungsverfahren gesichert"
+            },
+            {
               "code": "A15.7",
               "name": "Primäre Tuberkulose der Atmungsorgane, bakteriologisch, molekularbiologisch oder histologisch gesichert"
+            },
+            {
+              "code": "A16.0",
+              "name": "Lungentuberkulose, weder bakteriologisch, molekularbiologisch noch histologisch gesichert"
             },
             {
               "code": "A16.1",
               "name": "Lungentuberkulose, bakteriologische, molekularbiologische und histologische Untersuchung nicht durchgeführt"
             },
             {
-              "code": "A15.1",
-              "name": "Lungentuberkulose, nur durch Kultur gesichert"
+              "code": "A16.2",
+              "name": "Lungentuberkulose ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
+            },
+            {
+              "code": "A16.7",
+              "name": "Primäre Tuberkulose der Atmungsorgane ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"
             }
           ],
           "atc_codes": [
@@ -132993,7 +133036,7 @@
             "19818507",
             "20387142"
           ],
-          "zvt_best": "intranasales Glukokortikoid (INCS) in Kombination mit intranasalem Antihistaminikum (INAH)",
+          "zvt_best": null,
           "zn_ausmass": "Nicht quantifizierbar",
           "zn_wahrscheinlichkeit": "Anhaltspunkt",
           "zn_text": "Ausmaß des Zusatznutzens und Aussagekraft der Nachweise von Somatrogon: \n\nAnhaltspunkt für einen nicht quantifizierbaren Zusatznutzen, weil die wissenschaftliche Datengrundlage eine Quantifizierung nicht zulässt.",
@@ -135003,10 +135046,6 @@
               "name": "Bösartige Neubildung des Nierenbeckens"
             },
             {
-              "code": "C68.8",
-              "name": "Bösartige Neubildung: Harnorgane, mehrere Teilbereiche überlappend"
-            },
-            {
               "code": "C68.9",
               "name": "Bösartige Neubildung: Harnorgan, nicht näher bezeichnet"
             },
@@ -135027,12 +135066,12 @@
               "name": "Bösartige Neubildung: Urachus"
             },
             {
-              "code": "C67.8",
-              "name": "Bösartige Neubildung: Harnblase, mehrere Teilbereiche überlappend"
-            },
-            {
               "code": "C67.5",
               "name": "Bösartige Neubildung: Harnblasenhals"
+            },
+            {
+              "code": "C67.8",
+              "name": "Bösartige Neubildung: Harnblase, mehrere Teilbereiche überlappend"
             }
           ],
           "atc_codes": [
@@ -135074,7 +135113,7 @@
           "wirkstoff_kombination": null,
           "datum_beschluss": "2022-10-20",
           "datum_befristung_bis": "2025-12-15",
-          "patientengruppe": "Erwachsene mit muskelinvasivem Urothelkarzinom mit Tumorzell-PD-L1-Expression ≥ 1 % und hohem Rezidivrisiko nach vollständiger Resektion, die für eine Cisplatin-haltige Therapie nicht geeignet sind oder bereits eine neoadjuvante Behandlung erhalten haben; adjuvante Behandlung",
+          "patientengruppe": "Erwachsene mit muskelinvasivem Urothelkarzinom mit Tumorzell-PD-L1-Expression ≥ 1 % und hohem Rezidivrisiko nach vollständiger Resektion, die für eine Cisplatin-haltige Therapie nicht geeignet sind oder bereits eine neoadjuvante Behandlung Chemotherapie mit Cisplatin erhalten haben; adjuvante Behandlung",
           "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
           "icd_codes": [
             {
@@ -135106,10 +135145,6 @@
               "name": "Bösartige Neubildung des Nierenbeckens"
             },
             {
-              "code": "C68.8",
-              "name": "Bösartige Neubildung: Harnorgane, mehrere Teilbereiche überlappend"
-            },
-            {
               "code": "C68.9",
               "name": "Bösartige Neubildung: Harnorgan, nicht näher bezeichnet"
             },
@@ -135130,12 +135165,12 @@
               "name": "Bösartige Neubildung: Urachus"
             },
             {
-              "code": "C67.8",
-              "name": "Bösartige Neubildung: Harnblase, mehrere Teilbereiche überlappend"
-            },
-            {
               "code": "C67.5",
               "name": "Bösartige Neubildung: Harnblasenhals"
+            },
+            {
+              "code": "C67.8",
+              "name": "Bösartige Neubildung: Harnblase, mehrere Teilbereiche überlappend"
             }
           ],
           "atc_codes": [
@@ -135148,9 +135183,9 @@
             "19269294"
           ],
           "zvt_best": "Beobachtendes Abwarten",
-          "zn_ausmass": "Nicht quantifizierbar",
+          "zn_ausmass": "Beträchtlich",
           "zn_wahrscheinlichkeit": "Anhaltspunkt",
-          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Nivolumab gegenüber beobachtendem Abwarten: \nAnhaltspunkt für einen nicht-quantifizierbaren Zusatznutzen",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Nivolumab gegenüber beobachtendem Abwarten:  Anhaltspunkt für einen beträchtlichen Zusatznutzen",
           "endpunkte": {
             "mortalitaet": {
               "effekt": "Ø",
@@ -136934,7 +136969,6 @@
             "18802763",
             "18802786",
             "18830794",
-            "18878418",
             "18878430",
             "19056049",
             "19116107",
@@ -138265,12 +138299,8 @@
           "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
           "icd_codes": [
             {
-              "code": "C43.7",
-              "name": "Bösartiges Melanom der unteren Extremität, einschließlich Hüfte"
-            },
-            {
-              "code": "C43.5",
-              "name": "Bösartiges Melanom des Rumpfes"
+              "code": "C43.2",
+              "name": "Bösartiges Melanom des Ohres und des äußeren Gehörganges"
             },
             {
               "code": "C43.9",
@@ -138285,20 +138315,24 @@
               "name": "Bösartiges Melanom der Lippe"
             },
             {
+              "code": "C43.3",
+              "name": "Bösartiges Melanom sonstiger und nicht näher bezeichneter Teile des Gesichtes"
+            },
+            {
               "code": "C43.4",
               "name": "Bösartiges Melanom der behaarten Kopfhaut und des Halses"
+            },
+            {
+              "code": "C43.5",
+              "name": "Bösartiges Melanom des Rumpfes"
             },
             {
               "code": "C43.6",
               "name": "Bösartiges Melanom der oberen Extremität, einschließlich Schulter"
             },
             {
-              "code": "C43.2",
-              "name": "Bösartiges Melanom des Ohres und des äußeren Gehörganges"
-            },
-            {
-              "code": "C43.3",
-              "name": "Bösartiges Melanom sonstiger und nicht näher bezeichneter Teile des Gesichtes"
+              "code": "C43.7",
+              "name": "Bösartiges Melanom der unteren Extremität, einschließlich Hüfte"
             },
             {
               "code": "C43.8",
@@ -140936,68 +140970,6 @@
       ]
     },
     {
-      "id_be": "924",
-      "id_be_akz": "2022-10-01-D-874",
-      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/879/",
-      "handelsname": "Retsevmo",
-      "pharmazeutischer_unternehmer": "Lilly Deutschland GmbH",
-      "therapeutisches_gebiet_text": "Schilddrüsenkarzinom (onkologische Erkrankungen)",
-      "therapiegebiet": "onkologische Erkrankungen",
-      "therapiegebiet_atc": "Onkologie",
-      "orphan_drug": false,
-      "atmp": false,
-      "reg_status": "Beschluss_reg",
-      "patientengruppen": [
-        {
-          "pat_gr_id": "1662",
-          "wirkstoff_inn": "Selpercatinib",
-          "wirkstoff_kombination": null,
-          "datum_beschluss": "2023-03-16",
-          "datum_befristung_bis": "2025-11-20",
-          "patientengruppe": "Erwachsene und Jugendliche ab 12 Jahren mit einem fortgeschrittenen medullären, RET Rezeptor-Tyrosinkinase (rearranged during transfection - RET) -mutierten Schilddrüsenkarzinom; Erstlinientherapie",
-          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
-          "icd_codes": [
-            {
-              "code": "C73",
-              "name": "Bösartige Neubildung der Schilddrüse"
-            }
-          ],
-          "atc_codes": [
-            "L01EX22"
-          ],
-          "pzn": [
-            "17533568",
-            "17533574",
-            "17533580",
-            "17533597"
-          ],
-          "zvt_best": "- Vandetanib\noder\n- Cabozantinib",
-          "zn_ausmass": "Kein Zusatznutzen belegt",
-          "zn_wahrscheinlichkeit": null,
-          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Selpercatinib als Monotherapie gegenüber der zweckmäßigen Vergleichstherapie: Ein Zusatznutzen ist nicht belegt.",
-          "endpunkte": {
-            "mortalitaet": {
-              "effekt": "n.b.",
-              "beschreibung": "Es liegen keine bewertbaren Daten vor"
-            },
-            "morbiditaet": {
-              "effekt": "n.b.",
-              "beschreibung": "Es liegen keine bewertbaren Daten vor"
-            },
-            "lebensqualitaet": {
-              "effekt": "n.b.",
-              "beschreibung": "Es liegen keine bewertbaren Daten vor"
-            },
-            "ue": {
-              "effekt": "n.b.",
-              "beschreibung": "Es liegen keine bewertbaren Daten vor"
-            }
-          },
-          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/879/"
-        }
-      ]
-    },
-    {
       "id_be": "925",
       "id_be_akz": "2022-10-01-D-875",
       "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/878/",
@@ -141012,7 +140984,7 @@
       "patientengruppen": [
         {
           "pat_gr_id": "1663",
-          "wirkstoff_inn": "Brexucabtagen-Autoleucel",
+          "wirkstoff_inn": "Brexucabtagen autoleucel",
           "wirkstoff_kombination": null,
           "datum_beschluss": "2023-03-16",
           "datum_befristung_bis": null,
@@ -142427,7 +142399,9 @@
             "18598989",
             "19743703",
             "19743726",
+            "19761440",
             "20354177",
+            "20387053",
             "20399777"
           ],
           "zvt_best": "Dupilumab (ggf. in Kombination mit topischen Glukokortikoiden (TCS) und/oder topischen Calcineurininhibitoren (TCI))",
@@ -145588,7 +145562,8 @@
             "19726745",
             "19726751",
             "19952128",
-            "19952134"
+            "19952134",
+            "20399731"
           ],
           "zvt_best": "Adalimumab oder Bimekizumab oder Guselkumab oder Ixekizumab oder Secukinumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -145646,7 +145621,8 @@
             "19726745",
             "19726751",
             "19952128",
-            "19952134"
+            "19952134",
+            "20399731"
           ],
           "zvt_best": "Adalimumab oder Bimekizumab oder Brodalumab oder Guselkumab oder Infliximab oder Ixekizumab oder Risankizumab oder Secukinumab oder Ustekinumab",
           "zn_ausmass": "Kein Zusatznutzen belegt",
@@ -150501,16 +150477,16 @@
               "name": "Akute Megakaryoblastenleukämie: In kompletter Remission"
             },
             {
-              "code": "C92.01",
-              "name": "Akute myeloblastische Leukämie [AML]: In kompletter Remission"
-            },
-            {
               "code": "C94.00",
               "name": "Akute Erythroleukämie: Ohne Angabe einer kompletten Remission"
             },
             {
               "code": "C93.00",
               "name": "Akute Monoblasten-/Monozytenleukämie: Ohne Angabe einer kompletten Remission"
+            },
+            {
+              "code": "C92.01",
+              "name": "Akute myeloblastische Leukämie [AML]: In kompletter Remission"
             },
             {
               "code": "C93.01",
@@ -160863,7 +160839,7 @@
       "pharmazeutischer_unternehmer": "UCB Pharma GmbH",
       "therapeutisches_gebiet_text": "Myasthenia gravis (Krankheiten des Nervensystems)",
       "therapiegebiet": "Krankheiten des Nervensystems",
-      "therapiegebiet_atc": null,
+      "therapiegebiet_atc": "Rheumatologie/Immunologie",
       "orphan_drug": true,
       "atmp": false,
       "reg_status": "Beschluss_orph",
@@ -160882,7 +160858,9 @@
               "name": "Myasthenia gravis"
             }
           ],
-          "atc_codes": null,
+          "atc_codes": [
+            "L04AL02"
+          ],
           "pzn": [
             "18227247",
             "19374619",
@@ -160926,7 +160904,9 @@
               "name": "Myasthenia gravis"
             }
           ],
-          "atc_codes": null,
+          "atc_codes": [
+            "L04AL02"
+          ],
           "pzn": [
             "18227247",
             "19374619",
@@ -171346,113 +171326,6 @@
             }
           },
           "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1130/"
-        }
-      ]
-    },
-    {
-      "id_be": "1158",
-      "id_be_akz": "2024-07-01-D-1075",
-      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1095/",
-      "handelsname": "Fabhalta",
-      "pharmazeutischer_unternehmer": "Novartis Pharma GmbH",
-      "therapeutisches_gebiet_text": "Paroxysmale Hämoglobinurie (Krankheiten des Blutes und der blutbildenden Organe)",
-      "therapiegebiet": "Krankheiten des Blutes und der blutbildenden Organe",
-      "therapiegebiet_atc": "Rheumatologie/Immunologie",
-      "orphan_drug": true,
-      "atmp": false,
-      "reg_status": "Beschluss_orph",
-      "patientengruppen": [
-        {
-          "pat_gr_id": "2064",
-          "wirkstoff_inn": "Iptacopan",
-          "wirkstoff_kombination": null,
-          "datum_beschluss": "2024-12-19",
-          "datum_befristung_bis": null,
-          "patientengruppe": "Therapienaive Erwachsene mit PNH, die eine hämolytische Anämie aufweisen",
-          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
-          "icd_codes": [
-            {
-              "code": "D59.5",
-              "name": "Paroxysmale nächtliche Hämoglobinurie [Marchiafava-Micheli]"
-            }
-          ],
-          "atc_codes": [
-            "L04AJ08"
-          ],
-          "pzn": [
-            "19176380",
-            "19176397",
-            "19176405"
-          ],
-          "zvt_best": null,
-          "zn_ausmass": "Nicht quantifizierbar",
-          "zn_wahrscheinlichkeit": "Anhaltspunkt",
-          "zn_text": "Ausmaß des Zusatznutzens und Aussagekraft der Nachweise von Iptacopan als Monotherapie: Anhaltspunkt für einen nicht quantifizierbaren Zusatznutzen, weil die wissenschaftliche Datengrundlage eine Quantifizierung nicht zulässt.",
-          "endpunkte": {
-            "mortalitaet": {
-              "effekt": "n.b.",
-              "beschreibung": "Die Daten sind nicht bewertbar."
-            },
-            "morbiditaet": {
-              "effekt": "n.b.",
-              "beschreibung": "Die Daten sind nicht bewertbar."
-            },
-            "lebensqualitaet": {
-              "effekt": "n.b.",
-              "beschreibung": "Die Daten sind nicht bewertbar."
-            },
-            "ue": {
-              "effekt": "n.b.",
-              "beschreibung": "Die Daten sind nicht bewertbar."
-            }
-          },
-          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1095/"
-        },
-        {
-          "pat_gr_id": "2074",
-          "wirkstoff_inn": "Iptacopan",
-          "wirkstoff_kombination": null,
-          "datum_beschluss": "2024-12-19",
-          "datum_befristung_bis": null,
-          "patientengruppe": "Vorbehandelte Erwachsene mit PNH, die eine hämolytische Anämie aufweisen",
-          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
-          "icd_codes": [
-            {
-              "code": "D59.5",
-              "name": "Paroxysmale nächtliche Hämoglobinurie [Marchiafava-Micheli]"
-            }
-          ],
-          "atc_codes": [
-            "L04AJ08"
-          ],
-          "pzn": [
-            "19176380",
-            "19176397",
-            "19176405"
-          ],
-          "zvt_best": null,
-          "zn_ausmass": "Nicht quantifizierbar",
-          "zn_wahrscheinlichkeit": "Anhaltspunkt",
-          "zn_text": "Ausmaß des Zusatznutzens und Aussagekraft der Nachweise von Iptacopan als Monotherapie: Anhaltspunkt für einen nicht quantifizierbaren Zusatznutzen, weil die wissenschaftliche Datengrundlage eine Quantifizierung nicht zulässt.",
-          "endpunkte": {
-            "mortalitaet": {
-              "effekt": "↔",
-              "beschreibung": "Es traten keine Todesfälle auf."
-            },
-            "morbiditaet": {
-              "effekt": "↑",
-              "beschreibung": "Vorteile im Endpunkt Transfusionsfreiheit sowie in den Symptomskalen zur Fatigue und in der Skala zum Gesundheitszustand."
-            },
-            "lebensqualitaet": {
-              "effekt": "↑",
-              "beschreibung": "Vorteile in den Skalen zur körperlichen-, emotionalen- und Rollenfunktion sowie in der Skala zum allgemeinen Gesundheitszustand."
-            },
-            "ue": {
-              "effekt": "↔",
-              "beschreibung": "Keine für die Nutzenbewertung relevanten Unterschiede."
-            }
-          },
-          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1095/"
         }
       ]
     },
@@ -188023,7 +187896,7 @@
       "therapiegebiet_atc": "Neurologie",
       "orphan_drug": true,
       "atmp": false,
-      "reg_status": "Beschluss_orph",
+      "reg_status": "Beschluss_reg",
       "patientengruppen": [
         {
           "pat_gr_id": "2285",
@@ -189966,6 +189839,102 @@
       ]
     },
     {
+      "id_be": "1307",
+      "id_be_akz": "2025-11-15-D-1256",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1282/",
+      "handelsname": "Voranigo",
+      "pharmazeutischer_unternehmer": "Servier Deutschland GmbH",
+      "therapeutisches_gebiet_text": "Astrozytom oder Oligodendrogliom (onkologische Erkrankungen)",
+      "therapiegebiet": "onkologische Erkrankungen",
+      "therapiegebiet_atc": "Onkologie",
+      "orphan_drug": true,
+      "atmp": false,
+      "reg_status": "Beschluss_orph",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2317",
+          "wirkstoff_inn": "Vorasidenib",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-07",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene und Jugendliche ab 12 Jahren und einem Gewicht von mindestens 40 kg mit überwiegend nicht kontrastmittelanreichernden Grad 2 Astrozytomen oder Oligodendrogliomen mit einer IDH1-R132- oder IDH2-R172-Mutation, die nur chirurgische Intervention hatten und nicht unmittelbar eine Strahlen- oder Chemotherapie benötigen",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "C71.1",
+              "name": "Bösartige Neubildung: Frontallappen"
+            },
+            {
+              "code": "C71.2",
+              "name": "Bösartige Neubildung: Temporallappen"
+            },
+            {
+              "code": "C71.3",
+              "name": "Bösartige Neubildung: Parietallappen"
+            },
+            {
+              "code": "C71.4",
+              "name": "Bösartige Neubildung: Okzipitallappen"
+            },
+            {
+              "code": "C71.8",
+              "name": "Bösartige Neubildung: Gehirn, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C71.0",
+              "name": "Bösartige Neubildung: Zerebrum, ausgenommen Hirnlappen und Ventrikel"
+            },
+            {
+              "code": "C71.5",
+              "name": "Bösartige Neubildung: Hirnventrikel"
+            },
+            {
+              "code": "C71.6",
+              "name": "Bösartige Neubildung: Zerebellum"
+            },
+            {
+              "code": "C71.7",
+              "name": "Bösartige Neubildung: Hirnstamm"
+            },
+            {
+              "code": "C71.9",
+              "name": "Bösartige Neubildung: Gehirn, nicht näher bezeichnet"
+            }
+          ],
+          "atc_codes": [
+            "L01XM04"
+          ],
+          "pzn": [
+            "19725958",
+            "19725964"
+          ],
+          "zvt_best": null,
+          "zn_ausmass": "Nicht quantifizierbar",
+          "zn_wahrscheinlichkeit": "Anhaltspunkt",
+          "zn_text": "Ausmaß des Zusatznutzens und Aussagekraft der Nachweise von Vorasidenib: Anhaltspunkt für einen nicht-quantifizierbaren Zusatznutzen, weil die wissenschaftliche Datengrundlage eine Quantifizierung nicht zulässt.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "↔",
+              "beschreibung": "Kein für die Nutzenbewertung relevanter Unterschied."
+            },
+            "morbiditaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteil im Endpunkt Epileptische Anfälle"
+            },
+            "lebensqualitaet": {
+              "effekt": "↔",
+              "beschreibung": "Kein für die Nutzenbewertung relevanter Unterschied."
+            },
+            "ue": {
+              "effekt": "↓↓",
+              "beschreibung": "Nachteil bei den schweren UE"
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1282/"
+        }
+      ]
+    },
+    {
       "id_be": "1308",
       "id_be_akz": "2025-11-01-D-1259",
       "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1277/",
@@ -190254,6 +190223,114 @@
       ]
     },
     {
+      "id_be": "1166",
+      "id_be_akz": "2025-11-15-D-1260",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1281/",
+      "handelsname": "Tezspire",
+      "pharmazeutischer_unternehmer": "AstraZeneca GmbH",
+      "therapeutisches_gebiet_text": "Rhinosinusitis (Krankheiten des Atmungssystems)",
+      "therapiegebiet": "Krankheiten des Atmungssystems",
+      "therapiegebiet_atc": "Pneumologie",
+      "orphan_drug": false,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2321",
+          "wirkstoff_inn": "Tezepelumab",
+          "wirkstoff_kombination": "Add-on-Therapie mit intranasalen Corticosteroiden",
+          "datum_beschluss": "2026-05-07",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit schwerer chronischer Rhinosinusitis mit Nasenpolypen (CRSwNP), bei denen durch eine Therapie mit systemischen Kortikosteroiden und/oder durch einen chirurgischen Eingriff keine ausreichende Krankheitskontrolle erreicht wird",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "J32.0",
+              "name": "Chronische Sinusitis maxillaris"
+            },
+            {
+              "code": "J32.1",
+              "name": "Chronische Sinusitis frontalis"
+            },
+            {
+              "code": "J32.2",
+              "name": "Chronische Sinusitis ethmoidalis"
+            },
+            {
+              "code": "J32.3",
+              "name": "Chronische Sinusitis sphenoidalis"
+            },
+            {
+              "code": "J32.4",
+              "name": "Chronische Pansinusitis"
+            },
+            {
+              "code": "J32.8",
+              "name": "Sonstige chronische Sinusitis"
+            },
+            {
+              "code": "J32.9",
+              "name": "Chronische Sinusitis, nicht näher bezeichnet"
+            },
+            {
+              "code": "J33.0",
+              "name": "Polyp der Nasenhöhle"
+            },
+            {
+              "code": "J33.1",
+              "name": "Polyposis nasalis deformans"
+            },
+            {
+              "code": "J33.8",
+              "name": "Sonstige Polypen der Nasennebenhöhlen"
+            },
+            {
+              "code": "J33.9",
+              "name": "Nasenpolyp, nicht näher bezeichnet"
+            }
+          ],
+          "atc_codes": [
+            "R03DX11"
+          ],
+          "pzn": [
+            "17882079",
+            "17882085",
+            "17882091",
+            "17882116",
+            "17882122",
+            "17882139",
+            "18835840",
+            "19105569",
+            "19105575",
+            "19199889"
+          ],
+          "zvt_best": "Dupilumab oder Mepolizumab oder Omalizumab, jeweils in Kombination mit intranasalen Kortikosteroiden (Budesonid oder Mometasonfuroat)",
+          "zn_ausmass": "Nicht quantifizierbar",
+          "zn_wahrscheinlichkeit": "Anhaltspunkt",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Tezepelumab gegenüber Mepolizumab, jeweils in Kombination mit intranasalen Kortikosteroiden: Anhaltspunkt für einen nicht quantifizierbaren Zusatznutzen.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "morbiditaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteile in den Endpunkten nasale Kongestion, Riechvermögen und nasaler Ausfluss."
+            },
+            "lebensqualitaet": {
+              "effekt": "↔",
+              "beschreibung": "Keine für die Nutzenbewertung relevanten Unterschiede."
+            },
+            "ue": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1281/"
+        }
+      ]
+    },
+    {
       "id_be": "1311",
       "id_be_akz": "2025-10-01-D-1249",
       "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1233/",
@@ -190491,6 +190568,735 @@
       ]
     },
     {
+      "id_be": "1314",
+      "id_be_akz": "2025-12-01-D-1264",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1288/",
+      "handelsname": "Keytruda",
+      "pharmazeutischer_unternehmer": "MSD Sharp & Dohme GmbH",
+      "therapeutisches_gebiet_text": "Plattenepithelkarzinom (onkologische Erkrankungen)",
+      "therapiegebiet": "onkologische Erkrankungen",
+      "therapiegebiet_atc": "Onkologie",
+      "orphan_drug": false,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2327",
+          "wirkstoff_inn": "Pembrolizumab",
+          "wirkstoff_kombination": "Radiotherapie mit oder ohne begleitende Cisplatin-Therapie",
+          "datum_beschluss": "2026-05-21",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit resezierbarem lokal fortgeschrittenem Plattenepithelkarzinom der Kopf-Hals-Region, deren Tumoren PD-L1 mit einem CPS ≥ 1 exprimieren, die für eine cisplatinbasierte Therapie geeignet sind; neoadjuvante und adjuvante Therapie",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "C02.3",
+              "name": "Bösartige Neubildung: Vordere zwei Drittel der Zunge, Bereich nicht näher bezeichnet"
+            },
+            {
+              "code": "C02.8",
+              "name": "Bösartige Neubildung: Zunge, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C10.1",
+              "name": "Bösartige Neubildung: Vorderfläche der Epiglottis"
+            },
+            {
+              "code": "C05.8",
+              "name": "Bösartige Neubildung: Gaumen, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C06.1",
+              "name": "Bösartige Neubildung: Vestibulum oris"
+            },
+            {
+              "code": "C13.0",
+              "name": "Bösartige Neubildung: Regio postcricoidea"
+            },
+            {
+              "code": "C32.3",
+              "name": "Bösartige Neubildung: Larynxknorpel"
+            },
+            {
+              "code": "C10.2",
+              "name": "Bösartige Neubildung: Seitenwand des Oropharynx"
+            },
+            {
+              "code": "C10.3",
+              "name": "Bösartige Neubildung: Hinterwand des Oropharynx"
+            },
+            {
+              "code": "C10.9",
+              "name": "Bösartige Neubildung: Oropharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C00.5",
+              "name": "Bösartige Neubildung: Lippe, nicht näher bezeichnet, Innenseite"
+            },
+            {
+              "code": "C00.6",
+              "name": "Bösartige Neubildung: Lippenkommissur"
+            },
+            {
+              "code": "C11.0",
+              "name": "Bösartige Neubildung: Obere Wand des Nasopharynx"
+            },
+            {
+              "code": "C11.1",
+              "name": "Bösartige Neubildung: Hinterwand des Nasopharynx"
+            },
+            {
+              "code": "C11.2",
+              "name": "Bösartige Neubildung: Seitenwand des Nasopharynx"
+            },
+            {
+              "code": "C11.3",
+              "name": "Bösartige Neubildung: Vorderwand des Nasopharynx"
+            },
+            {
+              "code": "C11.9",
+              "name": "Bösartige Neubildung: Nasopharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C13.2",
+              "name": "Bösartige Neubildung: Hinterwand des Hypopharynx"
+            },
+            {
+              "code": "C02.9",
+              "name": "Bösartige Neubildung: Zunge, nicht näher bezeichnet"
+            },
+            {
+              "code": "C00.9",
+              "name": "Bösartige Neubildung: Lippe, nicht näher bezeichnet"
+            },
+            {
+              "code": "C01",
+              "name": "Bösartige Neubildung des Zungengrundes"
+            },
+            {
+              "code": "C00.0",
+              "name": "Bösartige Neubildung: Äußere Oberlippe"
+            },
+            {
+              "code": "C00.1",
+              "name": "Bösartige Neubildung: Äußere Unterlippe"
+            },
+            {
+              "code": "C00.3",
+              "name": "Bösartige Neubildung: Oberlippe, Innenseite"
+            },
+            {
+              "code": "C00.4",
+              "name": "Bösartige Neubildung: Unterlippe, Innenseite"
+            },
+            {
+              "code": "C02.0",
+              "name": "Bösartige Neubildung: Zungenrücken"
+            },
+            {
+              "code": "C02.2",
+              "name": "Bösartige Neubildung: Zungenunterfläche"
+            },
+            {
+              "code": "C02.4",
+              "name": "Bösartige Neubildung: Zungentonsille"
+            },
+            {
+              "code": "C07",
+              "name": "Bösartige Neubildung der Parotis"
+            },
+            {
+              "code": "C08.0",
+              "name": "Bösartige Neubildung: Glandula submandibularis"
+            },
+            {
+              "code": "C08.1",
+              "name": "Bösartige Neubildung: Glandula sublingualis"
+            },
+            {
+              "code": "C03.9",
+              "name": "Bösartige Neubildung: Zahnfleisch, nicht näher bezeichnet"
+            },
+            {
+              "code": "C04.9",
+              "name": "Bösartige Neubildung: Mundboden, nicht näher bezeichnet"
+            },
+            {
+              "code": "C06.0",
+              "name": "Bösartige Neubildung: Wangenschleimhaut"
+            },
+            {
+              "code": "C05.0",
+              "name": "Bösartige Neubildung: Harter Gaumen"
+            },
+            {
+              "code": "C05.1",
+              "name": "Bösartige Neubildung: Weicher Gaumen"
+            },
+            {
+              "code": "C05.2",
+              "name": "Bösartige Neubildung: Uvula"
+            },
+            {
+              "code": "C09.9",
+              "name": "Bösartige Neubildung: Tonsille, nicht näher bezeichnet"
+            },
+            {
+              "code": "C09.1",
+              "name": "Bösartige Neubildung: Gaumenbogen (vorderer) (hinterer)"
+            },
+            {
+              "code": "C12",
+              "name": "Bösartige Neubildung des Recessus piriformis"
+            },
+            {
+              "code": "C13.9",
+              "name": "Bösartige Neubildung: Hypopharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C14.2",
+              "name": "Bösartige Neubildung: Lymphatischer Rachenring [Waldeyer]"
+            },
+            {
+              "code": "C31.9",
+              "name": "Bösartige Neubildung: Nasennebenhöhle, nicht näher bezeichnet"
+            },
+            {
+              "code": "C30.0",
+              "name": "Bösartige Neubildung: Nasenhöhle"
+            },
+            {
+              "code": "C30.1",
+              "name": "Bösartige Neubildung: Mittelohr"
+            },
+            {
+              "code": "C31.0",
+              "name": "Bösartige Neubildung: Sinus maxillaris [Kieferhöhle]"
+            },
+            {
+              "code": "C31.1",
+              "name": "Bösartige Neubildung: Sinus ethmoidalis [Siebbeinzellen]"
+            },
+            {
+              "code": "C31.2",
+              "name": "Bösartige Neubildung: Sinus frontalis [Stirnhöhle]"
+            },
+            {
+              "code": "C31.3",
+              "name": "Bösartige Neubildung: Sinus sphenoidalis [Keilbeinhöhle]"
+            },
+            {
+              "code": "C32.0",
+              "name": "Bösartige Neubildung: Glottis"
+            },
+            {
+              "code": "C32.2",
+              "name": "Bösartige Neubildung: Subglottis"
+            },
+            {
+              "code": "C02.1",
+              "name": "Bösartige Neubildung: Zungenrand"
+            },
+            {
+              "code": "C04.0",
+              "name": "Bösartige Neubildung: Vorderer Teil des Mundbodens"
+            },
+            {
+              "code": "C04.1",
+              "name": "Bösartige Neubildung: Seitlicher Teil des Mundbodens"
+            },
+            {
+              "code": "C05.9",
+              "name": "Bösartige Neubildung: Gaumen, nicht näher bezeichnet"
+            },
+            {
+              "code": "C06.2",
+              "name": "Bösartige Neubildung: Retromolarregion"
+            },
+            {
+              "code": "C06.9",
+              "name": "Bösartige Neubildung: Mund, nicht näher bezeichnet"
+            },
+            {
+              "code": "C09.0",
+              "name": "Bösartige Neubildung: Fossa tonsillaris"
+            },
+            {
+              "code": "C10.0",
+              "name": "Bösartige Neubildung: Vallecula epiglottica"
+            },
+            {
+              "code": "C14.8",
+              "name": "Bösartige Neubildung: Lippe, Mundhöhle und Pharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C32.9",
+              "name": "Bösartige Neubildung: Larynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C32.1",
+              "name": "Bösartige Neubildung: Supraglottis"
+            },
+            {
+              "code": "C14.0",
+              "name": "Bösartige Neubildung: Pharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C03.1",
+              "name": "Bösartige Neubildung: Unterkieferzahnfleisch"
+            },
+            {
+              "code": "C03.0",
+              "name": "Bösartige Neubildung: Oberkieferzahnfleisch"
+            },
+            {
+              "code": "C10.4",
+              "name": "Bösartige Neubildung: Kiemengang"
+            },
+            {
+              "code": "C08.9",
+              "name": "Bösartige Neubildung: Große Speicheldrüse, nicht näher bezeichnet"
+            },
+            {
+              "code": "C10.8",
+              "name": "Bösartige Neubildung: Oropharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C13.1",
+              "name": "Bösartige Neubildung: Aryepiglottische Falte, hypopharyngeale Seite"
+            },
+            {
+              "code": "C06.8",
+              "name": "Bösartige Neubildung: Sonstige und nicht näher bezeichnete Teile des Mundes, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C09.8",
+              "name": "Bösartige Neubildung: Tonsille, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C00.2",
+              "name": "Bösartige Neubildung: Äußere Lippe, nicht näher bezeichnet"
+            },
+            {
+              "code": "C33",
+              "name": "Bösartige Neubildung der Trachea"
+            },
+            {
+              "code": "C00.8",
+              "name": "Bösartige Neubildung: Lippe, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C04.8",
+              "name": "Bösartige Neubildung: Mundboden, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C11.8",
+              "name": "Bösartige Neubildung: Nasopharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C13.8",
+              "name": "Bösartige Neubildung: Hypopharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C31.8",
+              "name": "Bösartige Neubildung: Nasennebenhöhlen, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C32.8",
+              "name": "Bösartige Neubildung: Larynx, mehrere Teilbereiche überlappend"
+            }
+          ],
+          "atc_codes": [
+            "L01FF02"
+          ],
+          "pzn": [
+            "10749897",
+            "19478508"
+          ],
+          "zvt_best": "Ein Therapieschema bestehend aus einer Operation (Tumorresektion), gefolgt von einer individualisierten Therapie unter Auswahl von adjuvanter Radiochemotherapie mit Cisplatin und adjuvanter Radiotherapie",
+          "zn_ausmass": "Gering",
+          "zn_wahrscheinlichkeit": "Anhaltspunkt",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Pembrolizumab als neoadjuvante Therapie sowie postoperativ adjuvant in Kombination mit Radiotherapie mit oder ohne begleitende Cisplatin-Therapie gefolgt von Pembrolizumab als Monotherapie gegenüber postoperative adjuvante Radiotherapie mit oder ohne begleitende Cisplatin-Therapie: Anhaltspunkt für einen geringen Zusatznutzen",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteil im Gesamtüberleben"
+            },
+            "morbiditaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "lebensqualitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "ue": {
+              "effekt": "↔",
+              "beschreibung": "Kein für die Nutzenbewertung relevanter Unterschied"
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1288/"
+        },
+        {
+          "pat_gr_id": "2343",
+          "wirkstoff_inn": "Pembrolizumab",
+          "wirkstoff_kombination": "Radiotherapie mit oder ohne begleitende Cisplatin-Therapie",
+          "datum_beschluss": "2026-05-21",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit resezierbarem lokal fortgeschrittenem Plattenepithelkarzinom der Kopf-Hals-Region, deren Tumoren PD-L1 mit einem CPS ≥ 1 exprimieren, die für eine cisplatinbasierte Therapie nicht geeignet sind; neoadjuvante und adjuvante Therapie",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "C02.3",
+              "name": "Bösartige Neubildung: Vordere zwei Drittel der Zunge, Bereich nicht näher bezeichnet"
+            },
+            {
+              "code": "C02.8",
+              "name": "Bösartige Neubildung: Zunge, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C10.1",
+              "name": "Bösartige Neubildung: Vorderfläche der Epiglottis"
+            },
+            {
+              "code": "C05.8",
+              "name": "Bösartige Neubildung: Gaumen, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C06.1",
+              "name": "Bösartige Neubildung: Vestibulum oris"
+            },
+            {
+              "code": "C13.0",
+              "name": "Bösartige Neubildung: Regio postcricoidea"
+            },
+            {
+              "code": "C32.3",
+              "name": "Bösartige Neubildung: Larynxknorpel"
+            },
+            {
+              "code": "C10.2",
+              "name": "Bösartige Neubildung: Seitenwand des Oropharynx"
+            },
+            {
+              "code": "C10.3",
+              "name": "Bösartige Neubildung: Hinterwand des Oropharynx"
+            },
+            {
+              "code": "C10.9",
+              "name": "Bösartige Neubildung: Oropharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C00.2",
+              "name": "Bösartige Neubildung: Äußere Lippe, nicht näher bezeichnet"
+            },
+            {
+              "code": "C00.5",
+              "name": "Bösartige Neubildung: Lippe, nicht näher bezeichnet, Innenseite"
+            },
+            {
+              "code": "C00.6",
+              "name": "Bösartige Neubildung: Lippenkommissur"
+            },
+            {
+              "code": "C11.0",
+              "name": "Bösartige Neubildung: Obere Wand des Nasopharynx"
+            },
+            {
+              "code": "C11.1",
+              "name": "Bösartige Neubildung: Hinterwand des Nasopharynx"
+            },
+            {
+              "code": "C11.2",
+              "name": "Bösartige Neubildung: Seitenwand des Nasopharynx"
+            },
+            {
+              "code": "C11.3",
+              "name": "Bösartige Neubildung: Vorderwand des Nasopharynx"
+            },
+            {
+              "code": "C11.9",
+              "name": "Bösartige Neubildung: Nasopharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C13.2",
+              "name": "Bösartige Neubildung: Hinterwand des Hypopharynx"
+            },
+            {
+              "code": "C33",
+              "name": "Bösartige Neubildung der Trachea"
+            },
+            {
+              "code": "C02.9",
+              "name": "Bösartige Neubildung: Zunge, nicht näher bezeichnet"
+            },
+            {
+              "code": "C00.9",
+              "name": "Bösartige Neubildung: Lippe, nicht näher bezeichnet"
+            },
+            {
+              "code": "C01",
+              "name": "Bösartige Neubildung des Zungengrundes"
+            },
+            {
+              "code": "C00.0",
+              "name": "Bösartige Neubildung: Äußere Oberlippe"
+            },
+            {
+              "code": "C00.1",
+              "name": "Bösartige Neubildung: Äußere Unterlippe"
+            },
+            {
+              "code": "C00.3",
+              "name": "Bösartige Neubildung: Oberlippe, Innenseite"
+            },
+            {
+              "code": "C00.4",
+              "name": "Bösartige Neubildung: Unterlippe, Innenseite"
+            },
+            {
+              "code": "C02.0",
+              "name": "Bösartige Neubildung: Zungenrücken"
+            },
+            {
+              "code": "C02.2",
+              "name": "Bösartige Neubildung: Zungenunterfläche"
+            },
+            {
+              "code": "C02.4",
+              "name": "Bösartige Neubildung: Zungentonsille"
+            },
+            {
+              "code": "C07",
+              "name": "Bösartige Neubildung der Parotis"
+            },
+            {
+              "code": "C08.0",
+              "name": "Bösartige Neubildung: Glandula submandibularis"
+            },
+            {
+              "code": "C08.1",
+              "name": "Bösartige Neubildung: Glandula sublingualis"
+            },
+            {
+              "code": "C03.9",
+              "name": "Bösartige Neubildung: Zahnfleisch, nicht näher bezeichnet"
+            },
+            {
+              "code": "C04.9",
+              "name": "Bösartige Neubildung: Mundboden, nicht näher bezeichnet"
+            },
+            {
+              "code": "C06.0",
+              "name": "Bösartige Neubildung: Wangenschleimhaut"
+            },
+            {
+              "code": "C05.0",
+              "name": "Bösartige Neubildung: Harter Gaumen"
+            },
+            {
+              "code": "C05.1",
+              "name": "Bösartige Neubildung: Weicher Gaumen"
+            },
+            {
+              "code": "C05.2",
+              "name": "Bösartige Neubildung: Uvula"
+            },
+            {
+              "code": "C09.9",
+              "name": "Bösartige Neubildung: Tonsille, nicht näher bezeichnet"
+            },
+            {
+              "code": "C09.1",
+              "name": "Bösartige Neubildung: Gaumenbogen (vorderer) (hinterer)"
+            },
+            {
+              "code": "C12",
+              "name": "Bösartige Neubildung des Recessus piriformis"
+            },
+            {
+              "code": "C13.9",
+              "name": "Bösartige Neubildung: Hypopharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C14.2",
+              "name": "Bösartige Neubildung: Lymphatischer Rachenring [Waldeyer]"
+            },
+            {
+              "code": "C31.9",
+              "name": "Bösartige Neubildung: Nasennebenhöhle, nicht näher bezeichnet"
+            },
+            {
+              "code": "C30.0",
+              "name": "Bösartige Neubildung: Nasenhöhle"
+            },
+            {
+              "code": "C30.1",
+              "name": "Bösartige Neubildung: Mittelohr"
+            },
+            {
+              "code": "C31.0",
+              "name": "Bösartige Neubildung: Sinus maxillaris [Kieferhöhle]"
+            },
+            {
+              "code": "C31.1",
+              "name": "Bösartige Neubildung: Sinus ethmoidalis [Siebbeinzellen]"
+            },
+            {
+              "code": "C31.2",
+              "name": "Bösartige Neubildung: Sinus frontalis [Stirnhöhle]"
+            },
+            {
+              "code": "C31.3",
+              "name": "Bösartige Neubildung: Sinus sphenoidalis [Keilbeinhöhle]"
+            },
+            {
+              "code": "C32.0",
+              "name": "Bösartige Neubildung: Glottis"
+            },
+            {
+              "code": "C32.2",
+              "name": "Bösartige Neubildung: Subglottis"
+            },
+            {
+              "code": "C02.1",
+              "name": "Bösartige Neubildung: Zungenrand"
+            },
+            {
+              "code": "C04.0",
+              "name": "Bösartige Neubildung: Vorderer Teil des Mundbodens"
+            },
+            {
+              "code": "C04.1",
+              "name": "Bösartige Neubildung: Seitlicher Teil des Mundbodens"
+            },
+            {
+              "code": "C05.9",
+              "name": "Bösartige Neubildung: Gaumen, nicht näher bezeichnet"
+            },
+            {
+              "code": "C06.2",
+              "name": "Bösartige Neubildung: Retromolarregion"
+            },
+            {
+              "code": "C06.9",
+              "name": "Bösartige Neubildung: Mund, nicht näher bezeichnet"
+            },
+            {
+              "code": "C09.0",
+              "name": "Bösartige Neubildung: Fossa tonsillaris"
+            },
+            {
+              "code": "C10.0",
+              "name": "Bösartige Neubildung: Vallecula epiglottica"
+            },
+            {
+              "code": "C14.8",
+              "name": "Bösartige Neubildung: Lippe, Mundhöhle und Pharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C32.9",
+              "name": "Bösartige Neubildung: Larynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C32.1",
+              "name": "Bösartige Neubildung: Supraglottis"
+            },
+            {
+              "code": "C14.0",
+              "name": "Bösartige Neubildung: Pharynx, nicht näher bezeichnet"
+            },
+            {
+              "code": "C03.1",
+              "name": "Bösartige Neubildung: Unterkieferzahnfleisch"
+            },
+            {
+              "code": "C03.0",
+              "name": "Bösartige Neubildung: Oberkieferzahnfleisch"
+            },
+            {
+              "code": "C10.4",
+              "name": "Bösartige Neubildung: Kiemengang"
+            },
+            {
+              "code": "C08.9",
+              "name": "Bösartige Neubildung: Große Speicheldrüse, nicht näher bezeichnet"
+            },
+            {
+              "code": "C10.8",
+              "name": "Bösartige Neubildung: Oropharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C13.1",
+              "name": "Bösartige Neubildung: Aryepiglottische Falte, hypopharyngeale Seite"
+            },
+            {
+              "code": "C06.8",
+              "name": "Bösartige Neubildung: Sonstige und nicht näher bezeichnete Teile des Mundes, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C09.8",
+              "name": "Bösartige Neubildung: Tonsille, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C00.8",
+              "name": "Bösartige Neubildung: Lippe, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C13.8",
+              "name": "Bösartige Neubildung: Hypopharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C31.8",
+              "name": "Bösartige Neubildung: Nasennebenhöhlen, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C11.8",
+              "name": "Bösartige Neubildung: Nasopharynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C32.8",
+              "name": "Bösartige Neubildung: Larynx, mehrere Teilbereiche überlappend"
+            },
+            {
+              "code": "C04.8",
+              "name": "Bösartige Neubildung: Mundboden, mehrere Teilbereiche überlappend"
+            }
+          ],
+          "atc_codes": [
+            "L01FF02"
+          ],
+          "pzn": [
+            "10749897",
+            "19478508"
+          ],
+          "zvt_best": "Ein Therapieschema bestehend aus einer Operation (Tumorresektion), gefolgt von einer individualisierten Therapie unter Auswahl von adjuvanter Radiochemotherapie mit Mitomycin + 5-FU oder Carboplatin + 5-FU oder Docetaxel und adjuvanter Radiotherapie",
+          "zn_ausmass": "Kein Zusatznutzen belegt",
+          "zn_wahrscheinlichkeit": null,
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Pembrolizumab als neoadjuvante Therapie sowie postoperativ adjuvant in Kombination mit Radiotherapie mit oder ohne begleitende Cisplatin-Therapie gefolgt von Pembrolizumab als Monotherapie gegenüber der zweckmäßigen Vergleichstherapie: Ein Zusatznutzen ist nicht belegt.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "Ø",
+              "beschreibung": "Es liegen keine Daten vor."
+            },
+            "morbiditaet": {
+              "effekt": "Ø",
+              "beschreibung": "Es liegen keine Daten vor."
+            },
+            "lebensqualitaet": {
+              "effekt": "Ø",
+              "beschreibung": "Es liegen keine Daten vor."
+            },
+            "ue": {
+              "effekt": "Ø",
+              "beschreibung": "Es liegen keine Daten vor."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1288/"
+        }
+      ]
+    },
+    {
       "id_be": "1315",
       "id_be_akz": "2025-10-15-D-1248",
       "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1272/",
@@ -190606,6 +191412,69 @@
             }
           },
           "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1271/"
+        }
+      ]
+    },
+    {
+      "id_be": "1318",
+      "id_be_akz": "2025-11-01-D-1261",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1275/",
+      "handelsname": "Ayvakyt",
+      "pharmazeutischer_unternehmer": "Blueprint Medicines (Germany) GmbH",
+      "therapeutisches_gebiet_text": "Indolente systemische Mastozytose (ISM) (onkologische Erkrankungen)",
+      "therapiegebiet": "onkologische Erkrankungen",
+      "therapiegebiet_atc": "Onkologie",
+      "orphan_drug": true,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2333",
+          "wirkstoff_inn": "Avapritinib",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-07",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit indolenter systemischer Mastozytose (ISM) mit mittelschweren bis schweren Symptomen, bei denen mit einer symptomatischen Behandlung keine ausreichende Kontrolle erzielt werden kann",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "D47.0",
+              "name": "Histiozyten- und Mastzelltumor unsicheren oder unbekannten Verhaltens"
+            }
+          ],
+          "atc_codes": [
+            "L01EX18"
+          ],
+          "pzn": [
+            "16742488",
+            "16742494",
+            "16742502",
+            "17531380",
+            "17531397"
+          ],
+          "zvt_best": "Best Supportive Care",
+          "zn_ausmass": "Gering",
+          "zn_wahrscheinlichkeit": "Anhaltspunkt",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Avapritinib gegenüber der zweckmäßigen Vergleichstherapie: Anhaltspunkt für einen geringen Zusatznutzen.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "↔",
+              "beschreibung": "Es traten keine Todesfälle auf."
+            },
+            "morbiditaet": {
+              "effekt": "↑↑",
+              "beschreibung": "Vorteile in den Endpunkten ISM-SAF (Hautdomäne und schwerste/s Leitdomäne/  symptomcluster), PGIS und EQ-5D VAS"
+            },
+            "lebensqualitaet": {
+              "effekt": "↑↑",
+              "beschreibung": "Vorteile in den Endpunkten MC-QoL (Gesamtscore, Symptome, soziales Leben / Funktionieren und Emotionen) und PCS des SF-12"
+            },
+            "ue": {
+              "effekt": "↔",
+              "beschreibung": "Keine für die Nutzenbewertung relevanten Unterschiede."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1275/"
         }
       ]
     },
@@ -190760,6 +191629,385 @@
             }
           },
           "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1276/"
+        }
+      ]
+    },
+    {
+      "id_be": "1321",
+      "id_be_akz": "2025-11-15-D-1271",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1280/",
+      "handelsname": "Attrogy",
+      "pharmazeutischer_unternehmer": "Purpose Pharma International AB",
+      "therapeutisches_gebiet_text": "hereditäre Amyloidose mit Polyneuropathie (Stoffwechselkrankheiten)",
+      "therapiegebiet": "Stoffwechselkrankheiten",
+      "therapiegebiet_atc": "Neurologie",
+      "orphan_drug": false,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2336",
+          "wirkstoff_inn": "Diflunisal",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-07",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit hereditärer Transthyretin-Amyloidose (hATTR-Amyloidose) mit Polyneuropathie der Stadien 1 oder 2",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "E85.2",
+              "name": "Heredofamiliäre Amyloidose, nicht näher bezeichnet"
+            },
+            {
+              "code": "E85.4",
+              "name": "Organbegrenzte Amyloidose"
+            },
+            {
+              "code": "E85.9",
+              "name": "Amyloidose, nicht näher bezeichnet"
+            },
+            {
+              "code": "E85.1",
+              "name": "Neuropathische heredofamiliäre Amyloidose"
+            }
+          ],
+          "atc_codes": [
+            "N02BA11"
+          ],
+          "pzn": [
+            "19881405"
+          ],
+          "zvt_best": "Vutrisiran",
+          "zn_ausmass": "Kein Zusatznutzen belegt",
+          "zn_wahrscheinlichkeit": null,
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von  Diflunisal gegenüber der zweckmäßigen Vergleichstherapie: Ein Zusatznutzen ist nicht belegt.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "morbiditaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "lebensqualitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "ue": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1280/"
+        }
+      ]
+    },
+    {
+      "id_be": "1322",
+      "id_be_akz": "2025-11-15-D-1265",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1284/",
+      "handelsname": "Koselugo",
+      "pharmazeutischer_unternehmer": "Alexion Pharma Germany GmbH",
+      "therapeutisches_gebiet_text": "Neurofibromatose (onkologische Erkrankungen)",
+      "therapiegebiet": "onkologische Erkrankungen",
+      "therapiegebiet_atc": "Onkologie",
+      "orphan_drug": true,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2338",
+          "wirkstoff_inn": "Selumetinib",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-07",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Kinder ab 3 Jahren und Jugendliche mit symptomatischen, inoperablen plexiformen Neurofibromen (PN) bei Neurofibromatose Typ 1 (NF1)",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "D36.1",
+              "name": "Gutartige Neubildung: Periphere Nerven und autonomes Nervensystem"
+            },
+            {
+              "code": "Q85.0",
+              "name": "Neurofibromatose (nicht bösartig)"
+            }
+          ],
+          "atc_codes": [
+            "L01EE04"
+          ],
+          "pzn": [
+            "17261710",
+            "17261727"
+          ],
+          "zvt_best": "Best Supportive Care",
+          "zn_ausmass": "Nicht quantifizierbar",
+          "zn_wahrscheinlichkeit": "Anhaltspunkt",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Selumetinib gegenüber Best-Supportive-Care: Anhaltspunkt für einen nicht quantifizierbaren Zusatznutzen.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "morbiditaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteil im Endpunkt „Veränderung des Tumorvolumens“ (im Vergleich zu Baseline)."
+            },
+            "lebensqualitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "ue": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1284/"
+        }
+      ]
+    },
+    {
+      "id_be": "1323",
+      "id_be_akz": "2025-11-15-D-1266",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1284/",
+      "handelsname": "Koselugo",
+      "pharmazeutischer_unternehmer": null,
+      "therapeutisches_gebiet_text": null,
+      "therapiegebiet": "Onkologie",
+      "therapiegebiet_atc": "Onkologie",
+      "orphan_drug": true,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2337",
+          "wirkstoff_inn": "Selumetinib",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-07",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit symptomatischen, inoperablen plexiformen Neurofibromen (PN) bei Neurofibromatose Typ 1 (NF1)",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "D36.1",
+              "name": "Gutartige Neubildung: Periphere Nerven und autonomes Nervensystem"
+            },
+            {
+              "code": "Q85.0",
+              "name": "Neurofibromatose (nicht bösartig)"
+            }
+          ],
+          "atc_codes": [
+            "L01EE04"
+          ],
+          "pzn": [
+            "17261710",
+            "17261727"
+          ],
+          "zvt_best": "Best Supportive Care",
+          "zn_ausmass": "Gering",
+          "zn_wahrscheinlichkeit": "Hinweis",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Selumetinib gegenüber Best-Supportive-Care: Hinweis auf einen geringen Zusatznutzen",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "↔",
+              "beschreibung": "Kein für die Nutzenbewertung relevanter Unterschied."
+            },
+            "morbiditaet": {
+              "effekt": "↑↑",
+              "beschreibung": "Vorteile in den Endpunkten „Volumenänderung der Zielläsion“, „Chronische Schmerzen“ (mittels NRS, PGIS, PGIC-1 und PGIC-2) und „Schmerzspitzen“ (mittels NRS, PGIS, PGIC-1 und PGIC-2)"
+            },
+            "lebensqualitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "ue": {
+              "effekt": "↓↓",
+              "beschreibung": "Nachteil in dem Endpunkt schwere UEs"
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1284/"
+        }
+      ]
+    },
+    {
+      "id_be": "1325",
+      "id_be_akz": "2025-12-01-D-1278",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1286/",
+      "handelsname": "Tryngolza",
+      "pharmazeutischer_unternehmer": "Swedish Orphan Biovitrum GmbH",
+      "therapeutisches_gebiet_text": "Sonstige Stoffwechselerkrankungen (Stoffwechselkrankheiten)",
+      "therapiegebiet": "Stoffwechselkrankheiten",
+      "therapiegebiet_atc": "Kardiologie",
+      "orphan_drug": true,
+      "atmp": false,
+      "reg_status": "Beschluss_orph",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2340",
+          "wirkstoff_inn": "Olezarsen",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-21",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit genetisch bestätigtem familiärem Chylomikronämie-Syndrom (FCS)",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "E78.3",
+              "name": "Hyperchylomikronämie"
+            }
+          ],
+          "atc_codes": [
+            "C10AX21"
+          ],
+          "pzn": [
+            "20026183"
+          ],
+          "zvt_best": null,
+          "zn_ausmass": "Gering",
+          "zn_wahrscheinlichkeit": "Hinweis",
+          "zn_text": "Ausmaß des Zusatznutzens und Aussagekraft der Nachweise von  Olezarsen: Hinweis auf einen  geringen Zusatznutzen.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "↔",
+              "beschreibung": "Es traten keine Todesfälle auf."
+            },
+            "morbiditaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteil im Endpunkt „bestätigte akute Pankreatitis“."
+            },
+            "lebensqualitaet": {
+              "effekt": "↔",
+              "beschreibung": "Keine für die Nutzenbewertung relevanten Unterschiede."
+            },
+            "ue": {
+              "effekt": "↔",
+              "beschreibung": "Keine für die Nutzenbewertung relevanten Unterschiede."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1286/"
+        }
+      ]
+    },
+    {
+      "id_be": "1326",
+      "id_be_akz": "2025-12-01-D-1267",
+      "url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1287/",
+      "handelsname": "Scemblix",
+      "pharmazeutischer_unternehmer": "Novartis Pharma GmbH",
+      "therapeutisches_gebiet_text": "Chronische myeloische Leukämie (onkologische Erkrankungen)",
+      "therapiegebiet": "onkologische Erkrankungen",
+      "therapiegebiet_atc": "Hämatologie",
+      "orphan_drug": true,
+      "atmp": false,
+      "reg_status": "Beschluss_reg",
+      "patientengruppen": [
+        {
+          "pat_gr_id": "2341",
+          "wirkstoff_inn": "Asciminib",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-21",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit neu diagnostizierter Philadelphia-Chromosom-positiver chronischer myeloischer Leukämie in der chronischen Phase (Ph+ CML-CP), Erstlinientherapie",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "C92.10",
+              "name": "Chronische myeloische Leukämie [CML], BCR/ABL-positiv: Ohne Angabe einer kompletten Remission"
+            },
+            {
+              "code": "C92.11",
+              "name": "Chronische myeloische Leukämie [CML], BCR/ABL-positiv: In kompletter Remission"
+            }
+          ],
+          "atc_codes": [
+            "L01EA06"
+          ],
+          "pzn": [
+            "17582710",
+            "17582733",
+            "17582756",
+            "19482102",
+            "19723103",
+            "20026361"
+          ],
+          "zvt_best": "- Imatinib\noder\n- Nilotinib\noder\n- Dasatinib\noder \n- Bosutinib",
+          "zn_ausmass": "Beträchtlich",
+          "zn_wahrscheinlichkeit": "Anhaltspunkt",
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Asciminib gegenüber Imatinib oder Nilotinib oder Dasatinib oder Bosutinib: Anhaltspunkt für einen beträchtlichen Zusatznutzen",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "↔",
+              "beschreibung": "Keine für die Nutzenbewertung relevanten Unterschiede"
+            },
+            "morbiditaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteile in Fatigue, Übelkeit und Erbrechen, Verstopfung, Symptomatik"
+            },
+            "lebensqualitaet": {
+              "effekt": "↑",
+              "beschreibung": "Vorteile in sozialer Funktion, Auswirkungen auf das tägliche Leben"
+            },
+            "ue": {
+              "effekt": "↑↑",
+              "beschreibung": "Vorteile in den Endpunkten schwere UE (CTCAE-Grad 3 oder 4) und Therapieabbruch wegen UE"
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1287/"
+        },
+        {
+          "pat_gr_id": "2342",
+          "wirkstoff_inn": "Asciminib",
+          "wirkstoff_kombination": null,
+          "datum_beschluss": "2026-05-21",
+          "datum_befristung_bis": null,
+          "patientengruppe": "Erwachsene mit Philadelphia-Chromosom-positiver chronischer myeloischer Leukämie in der chronischen Phase (Ph+ CML-CP), welche zuvor mit einem TKI behandelt wurden; Zweitlinientherapie",
+          "awg_kurz": "Die Verschlagwortung zum Anwendungsgebiet des Beschlusses wird zu einem späteren Zeitpunkt ausgewiesen.",
+          "icd_codes": [
+            {
+              "code": "C92.10",
+              "name": "Chronische myeloische Leukämie [CML], BCR/ABL-positiv: Ohne Angabe einer kompletten Remission"
+            },
+            {
+              "code": "C92.11",
+              "name": "Chronische myeloische Leukämie [CML], BCR/ABL-positiv: In kompletter Remission"
+            }
+          ],
+          "atc_codes": [
+            "L01EA06"
+          ],
+          "pzn": [
+            "17582710",
+            "17582733",
+            "17582756",
+            "19482102",
+            "19723103",
+            "20026361"
+          ],
+          "zvt_best": "Eine individualisierte Therapie unter Auswahl von \n- Nilotinib, \n- Dasatinib, \n- Bosutinib und \n- Ponatinib",
+          "zn_ausmass": "Kein Zusatznutzen belegt",
+          "zn_wahrscheinlichkeit": null,
+          "zn_text": "Ausmaß und Wahrscheinlichkeit des Zusatznutzens von Asciminib gegenüber der zweckmäßigen Vergleichstherapie: Ein Zusatznutzen ist nicht belegt.",
+          "endpunkte": {
+            "mortalitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "morbiditaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "lebensqualitaet": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            },
+            "ue": {
+              "effekt": "n.b.",
+              "beschreibung": "Es liegen keine bewertbaren Daten vor."
+            }
+          },
+          "quelle_url": "https://www.g-ba.de/bewertungsverfahren/nutzenbewertung/1287/"
         }
       ]
     }
