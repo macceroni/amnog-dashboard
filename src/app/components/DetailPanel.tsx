@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { FlatRow } from "@/types/amnog";
 import { AUSMASS_BADGE } from "@/lib/colors";
 import { displayPU } from "@/lib/format";
+import { isSafeHttpUrl } from "@/lib/url";
 
 function val(v: string | null): string {
   return v === null ? "—" : v;
@@ -261,7 +262,7 @@ export default function DetailPanel({
           </section>
 
           {/* Quelle */}
-          {row.quelle_url && (
+          {isSafeHttpUrl(row.quelle_url) && (
             <a
               href={row.quelle_url}
               target="_blank"
