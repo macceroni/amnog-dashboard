@@ -26,6 +26,7 @@ export default function Home() {
       datum_befristung_bis: p.datum_befristung_bis,
       patientengruppe: p.patientengruppe,
       awg_kurz: p.awg_kurz,
+      awg_beschluss: p.awg_beschluss,
       icd_codes: p.icd_codes,
       atc_codes: p.atc_codes,
       pzn: p.pzn,

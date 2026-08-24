@@ -5,6 +5,7 @@ import type { FlatRow } from "@/types/amnog";
 import { AUSMASS_BADGE } from "@/lib/colors";
 import { displayPU } from "@/lib/format";
 import { isSafeHttpUrl } from "@/lib/url";
+import { matchingFields, type MatchField } from "@/lib/search";
 
 function val(v: string | null): string {
   return v === null ? "—" : v;
@@ -74,11 +75,19 @@ function ZvtText({ text }: { text: string }) {
   );
 }
 
+const HIGHLIGHT_CLASS = "bg-yellow-100 rounded px-1 -mx-1";
+
+function hl(active: boolean): string {
+  return active ? HIGHLIGHT_CLASS : "";
+}
+
 export default function DetailPanel({
   row,
+  search,
   onClose,
 }: {
   row: FlatRow;
+  search: string;
   onClose: () => void;
 }) {
   useEffect(() => {
@@ -92,6 +101,8 @@ export default function DetailPanel({
   const regLabel = row.reg_status
     ? (REG_STATUS_LABEL[row.reg_status] ?? row.reg_status)
     : null;
+
+  const matched = new Set<MatchField>(search.trim() ? matchingFields(row, search) : []);
 
   return (
     <div className="fixed inset-0 z-50 flex">
@@ -107,14 +118,16 @@ export default function DetailPanel({
         {/* Header */}
         <div className="flex items-start justify-between px-6 py-5 border-b border-zinc-200 sticky top-0 bg-white z-10">
           <div>
-            <h2 className="text-lg font-semibold text-zinc-900">
+            <h2 className={`text-lg font-semibold text-zinc-900 ${hl(matched.has("handelsname"))}`}>
               {val(row.handelsname)}
             </h2>
-            <p className="text-sm text-zinc-500 mt-0.5">
+            <p className={`text-sm text-zinc-500 mt-0.5 ${hl(matched.has("wirkstoff_inn"))}`}>
               {val(row.wirkstoff_inn)}
               {row.wirkstoff_kombination ? ` / ${row.wirkstoff_kombination}` : ""}
             </p>
-            <p className="text-sm text-zinc-400 mt-0.5">{displayPU(row.pharmazeutischer_unternehmer)}</p>
+            <p className={`text-sm text-zinc-400 mt-0.5 ${hl(matched.has("pharmazeutischer_unternehmer"))}`}>
+              {displayPU(row.pharmazeutischer_unternehmer)}
+            </p>
             <p className="text-xs font-mono text-zinc-400 mt-1">{row.id_be_akz}</p>
           </div>
           <button
@@ -205,9 +218,14 @@ export default function DetailPanel({
               Patientengruppe & Therapeutisches Gebiet
             </h3>
             <dl className="space-y-1.5">
-              <Row label="Patientengruppe" value={val(row.patientengruppe)} />
+              <Row label="Patientengruppe" value={val(row.patientengruppe)} highlight={matched.has("patientengruppe")} />
               <Row label="Anwendungsgebiet" value={val(row.awg_kurz)} />
-              <Row label="Therapeutisches Gebiet" value={val(row.therapeutisches_gebiet_text)} />
+              <Row label="Anwendungsgebiet (Beschluss)" value={val(row.awg_beschluss)} highlight={matched.has("awg_beschluss")} />
+              <Row
+                label="Therapeutisches Gebiet"
+                value={val(row.therapeutisches_gebiet_text)}
+                highlight={matched.has("therapeutisches_gebiet_text")}
+              />
               <div className="flex gap-2">
                 <dt className="text-zinc-500 w-36 shrink-0">ZVT</dt>
                 <dd className="text-zinc-700 flex-1">
@@ -223,17 +241,19 @@ export default function DetailPanel({
               Codes
             </h3>
             <dl className="space-y-1.5">
-              <dt className="text-zinc-500">ICD-10</dt>
-              <dd className="text-zinc-700">
-                {(row.icd_codes ?? []).length === 0
-                  ? "—"
-                  : (row.icd_codes ?? []).map((c) => (
-                      <span key={c.code} className="mr-2">
-                        <span className="font-mono">{c.code}</span>{" "}
-                        <span className="text-zinc-500">{c.name}</span>
-                      </span>
-                    ))}
-              </dd>
+              <div className="flex gap-2">
+                <dt className="text-zinc-500 w-36 shrink-0">ICD-10</dt>
+                <dd className={`text-zinc-700 flex-1 ${hl(matched.has("icd_codes"))}`}>
+                  {(row.icd_codes ?? []).length === 0
+                    ? "—"
+                    : (row.icd_codes ?? []).map((c) => (
+                        <span key={c.code} className="mr-2">
+                          <span className="font-mono">{c.code}</span>{" "}
+                          <span className="text-zinc-500">{c.name}</span>
+                        </span>
+                      ))}
+                </dd>
+              </div>
               <Row
                 label="ATC"
                 value={(row.atc_codes ?? []).length === 0 ? "—" : (row.atc_codes ?? []).join(", ")}
@@ -251,7 +271,11 @@ export default function DetailPanel({
               Verfahren
             </h3>
             <dl className="space-y-1.5">
-              <Row label="Unternehmen" value={displayPU(row.pharmazeutischer_unternehmer)} />
+              <Row
+                label="Unternehmen"
+                value={displayPU(row.pharmazeutischer_unternehmer)}
+                highlight={matched.has("pharmazeutischer_unternehmer")}
+              />
               <Row label="Therapiegebiet" value={val(row.therapiegebiet)} />
               <Row label="Beschlussdatum" value={formatDate(row.datum_beschluss)} />
               <Row
@@ -278,11 +302,11 @@ export default function DetailPanel({
   );
 }
 
-function Row({ label, value }: { label: string; value: string }) {
+function Row({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div className="flex gap-2">
       <dt className="text-zinc-500 w-36 shrink-0">{label}</dt>
-      <dd className="text-zinc-700">{value}</dd>
+      <dd className={`text-zinc-700 ${hl(!!highlight)}`}>{value}</dd>
     </div>
   );
 }

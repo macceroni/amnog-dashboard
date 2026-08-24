@@ -3,6 +3,7 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import type { FlatRow } from "@/types/amnog";
 import { displayPU, displayIndikation, capitalizeFirst } from "@/lib/format";
+import { rowMatchesSearch, matchingFields, matchLevel, type MatchLevel } from "@/lib/search";
 import DetailPanel from "./DetailPanel";
 
 type SortKey = "handelsname" | "wirkstoff_inn" | "pharmazeutischer_unternehmer" | "therapiegebiet" | "therapeutisches_gebiet_text" | "patientengruppe" | "zn_ausmass" | "zn_wahrscheinlichkeit" | "datum_beschluss";
@@ -104,7 +105,7 @@ function MultiSelectFilter({
       </button>
 
       {open && (
-        <div className="absolute z-10 mt-1 bg-white border border-zinc-200 rounded-lg shadow-md min-w-[200px] max-h-72 overflow-y-auto">
+        <div className="absolute z-20 mt-1 bg-white border border-zinc-200 rounded-lg shadow-md min-w-[200px] max-h-72 overflow-y-auto">
           {options.map((opt) => (
             <label
               key={opt}
@@ -227,14 +228,9 @@ export default function AmnogTable({
   }, [rows]);
 
   const filtered = useMemo(() => {
-    const term = search.trim().toLowerCase();
+    const term = search.trim();
     return rows.filter((r) => {
-      if (
-        term &&
-        !r.handelsname?.toLowerCase().includes(term) &&
-        !r.wirkstoff_inn?.toLowerCase().includes(term) &&
-        !r.pharmazeutischer_unternehmer?.toLowerCase().includes(term)
-      ) {
+      if (term && !rowMatchesSearch(r, term)) {
         return false;
       }
       if (selectedGebiete.size > 0 && !selectedGebiete.has(r.therapiegebiet ?? "")) {
@@ -253,6 +249,39 @@ export default function AmnogTable({
       compareValues(a[sortKey], b[sortKey], sortDir, col?.isDate)
     );
   }, [filtered, sortKey, sortDir]);
+
+  // Pro Verfahren: wie viele PGs (innerhalb des jahres-/orphan-gefilterten
+  // rows-Sets) selbst PG-eigene Suchtreffer haben, plus die Match-Ebene
+  // jeder einzelnen Zeile — fuer den Zaehler unter der Patientengruppe-Zelle.
+  const searchMatchInfo = useMemo(() => {
+    const term = search.trim();
+    if (!term) return null;
+    const byVerfahren = new Map<string, { total: number; pgMatches: number }>();
+    const rowLevels = new Map<string, MatchLevel>();
+    for (const r of rows) {
+      const level = matchLevel(matchingFields(r, term));
+      if (!byVerfahren.has(r.id_be_akz)) byVerfahren.set(r.id_be_akz, { total: 0, pgMatches: 0 });
+      const g = byVerfahren.get(r.id_be_akz)!;
+      g.total += 1;
+      if (level === "pg") g.pgMatches += 1;
+      rowLevels.set(r.pat_gr_id, level);
+    }
+    return { byVerfahren, rowLevels };
+  }, [rows, search]);
+
+  function searchNote(row: FlatRow): string | null {
+    if (!searchMatchInfo) return null;
+    const level = searchMatchInfo.rowLevels.get(row.pat_gr_id);
+    if (level === "pg") {
+      const g = searchMatchInfo.byVerfahren.get(row.id_be_akz)!;
+      return `Treffer in ${g.pgMatches} von ${g.total} Patientengruppen`;
+    }
+    if (level === "verfahren") return "Treffer im Verfahren";
+    return null;
+  }
+
+  const verfahrenCount = useMemo(() => new Set(sorted.map((r) => r.id_be_akz)).size, [sorted]);
+  const verfahrenTotal = useMemo(() => new Set(rows.map((r) => r.id_be_akz)).size, [rows]);
 
   const isFullRange = yearRange[0] === minYear && yearRange[1] === maxYear;
   const hasActiveFilters =
@@ -283,12 +312,12 @@ export default function AmnogTable({
   return (
     <div>
       {activeRow && (
-        <DetailPanel row={activeRow} onClose={() => setActiveRow(null)} />
+        <DetailPanel row={activeRow} search={search} onClose={() => setActiveRow(null)} />
       )}
       <div className="flex flex-wrap items-center gap-3 mb-4">
         <input
           type="search"
-          placeholder="Handelsname, Wirkstoff oder Unternehmen suchen…"
+          placeholder="Handelsname, Wirkstoff, Unternehmen oder Indikation suchen…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="border border-zinc-200 rounded-lg px-3 py-2 text-sm w-72 focus:outline-none focus:ring-2 focus:ring-zinc-300"
@@ -342,6 +371,7 @@ export default function AmnogTable({
           </button>
         )}
         <span className="text-sm text-zinc-500 ml-auto">
+          {verfahrenCount.toLocaleString("de-DE")} von {verfahrenTotal.toLocaleString("de-DE")} Verfahren,{" "}
           {sorted.length.toLocaleString("de-DE")} von {rows.length.toLocaleString("de-DE")} Patientengruppen
         </span>
       </div>
@@ -403,6 +433,9 @@ export default function AmnogTable({
                   >
                     {row.patientengruppe ?? "—"}
                   </div>
+                  {searchNote(row) && (
+                    <div className="text-xs text-zinc-400 whitespace-nowrap">{searchNote(row)}</div>
+                  )}
                 </td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.zn_ausmass)}</td>
                 <td className="px-4 py-2 text-zinc-700">{display(row.zn_wahrscheinlichkeit)}</td>
